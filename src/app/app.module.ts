@@ -10,5 +10,6 @@ import { HowToUseAngGUI } from './pages/how-to-use-angui/how-to-use-angui.compon
   imports: [BrowserModule, FormsModule, AngGuiModule],
   declarations: [AppComponent, HowToUseAngGUI],
   bootstrap: [AppComponent],
+  providers: [AlertMessageService],
 })
 export class AppModule {}
