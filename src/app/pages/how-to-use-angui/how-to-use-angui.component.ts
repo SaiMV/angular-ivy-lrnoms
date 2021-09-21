@@ -7,11 +7,10 @@ import { AlertMessageService } from '../../anggui/ang-gui-services/common-messag
   styleUrls: ['./how-to-use-angui.component.css'],
 })
 export class HowToUseAngGUI {
-  constructor(private alertMessageService: AlertMessageService) {
-    this.showErrorMessage();
-  }
+  constructor(private alertMessageService: AlertMessageService) {}
 
   showErrorMessage() {
+    console.log('called');
     this.alertMessageService.errorCallBackMsg({
       alertEnabled: true,
       isRedAlert: true,

@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, Input } from '@angular/core';
 import { AlertMessageService } from '../ang-gui-services/common-message-service/alert-message.service';
 import { Subscription } from 'rxjs';
 
@@ -8,13 +8,14 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./ang-gui-alert.component.css'],
 })
 export class AngGuiAlertComponent implements OnDestroy {
-  showAlertMessage: boolean = false;
+  @Input() showAlertMessage: boolean = false;
   alertMessage: String = '';
   isRedAlert = true;
 
   alertSubscription: Subscription =
     this.alertMessageService.alertMessageCallBack.subscribe(
       (data: any) => {
+        console.log('jj');
         let alertData = <alertModel>data;
         if (alertData.alertEnabled) {
           this.showAlertMessage = true;
