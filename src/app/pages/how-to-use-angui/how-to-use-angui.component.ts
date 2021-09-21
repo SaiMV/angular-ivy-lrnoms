@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AlertMessageService } from 'src/app/anggui/ang-gui-services/common-message-service/alert-message.service';
 
+import { AlertMessageService } from '../../anggui/ang-gui-services/common-message-service/alert-message.service';
 @Component({
   selector: 'how-to-use-angui',
   templateUrl: './how-to-use-angui.component.html',
