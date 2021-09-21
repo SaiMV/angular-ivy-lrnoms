@@ -1,0 +1,67 @@
+.main-error {
+  float: left;
+  width: 100%;
+  position: fixed;
+  text-align: left;
+  z-index: 100000;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+  top: 55px;
+  height: 44px;
+  margin-bottom: -46px !important;
+}
+
+.redAlert {
+  background-color: #e8002e;
+}
+
+.greenAlert {
+  background-color: green;
+}
+
+.errormsg {
+  height: 14px;
+  width: calc(100% - 100px);
+  padding-top: 5px;
+  float: left;
+  text-align: left;
+  padding-left: 10px;
+  color: #ffffff !important;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.29px;
+  line-height: 14px;
+}
+
+.error-img-responsive {
+  height: 20px;
+  width: 22px;
+  color: white;
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.error-img-close {
+  color: white;
+  text-align: left;
+  float: left;
+  margin-right: 35px;
+  margin-top: -4px;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.classC1 {
+  float: right;
+  padding-right: 10px;
+  height: 30px;
+  font-family: monospace;
+  font-size: 15px;
+  margin-right: 5px;
+  width: 30px;
+}
