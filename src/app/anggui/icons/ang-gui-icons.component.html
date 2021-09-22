@@ -10,8 +10,34 @@
       <title>Layer 1</title>
       <path
         d="m20,5.51071l-1.51071,-1.51071l-5.98929,5.98929l-5.98929,-5.98929l-1.51071,1.51071l5.98929,5.98929l-5.98929,5.98929l1.51071,1.51071l5.98929,-5.98929l5.98929,5.98929l1.51071,-1.51071l-5.98929,-5.98929l5.98929,-5.98929z"
-        fill="black"
+        [attr.stroke]="fillColor !== undefined ? fillColor : 'none'"
+        [attr.stroke]="strokeColor !== undefined ? strokeColor : 'none'"
         id="svg_1"
+      ></path>
+    </g>
+  </svg>
+</ng-container>
+<ng-container *ngIf="iconName === 'info-icon'">
+  <svg
+    xmlns:svg="http://www.w3.org/2000/svg"
+    height="24"
+    id="svg201"
+    width="24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g class="layer">
+      <title>Layer 1</title>
+      <path
+        d="m-1,-2l26,0l0,27l-26,0l0,-27z"
+        [attr.stroke]="fillColor !== undefined ? fillColor : 'none'"
+        [attr.stroke]="strokeColor !== undefined ? strokeColor : 'none'"
+        id="svg_1"
+      ></path>
+      <path
+        [attr.stroke]="fillColor !== undefined ? fillColor : 'none'"
+        [attr.stroke]="strokeColor !== undefined ? strokeColor : 'none'"
+        d="m11,17l2,0l0,-6l-2,0l0,6zm1,-15c-5.52,0 -10,4.48 -10,10s4.48,10 10,10s10,-4.48 10,-10s-4.48,-10 -10,-10zm0,18c-4.41,0 -8,-3.59 -8,-8s3.59,-8 8,-8s8,3.59 8,8s-3.59,8 -8,8zm-1,-11l2,0l0,-2l-2,0l0,2z"
+        id="svg_2"
       ></path>
     </g>
   </svg>

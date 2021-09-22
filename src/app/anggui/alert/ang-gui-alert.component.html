@@ -1,15 +1,20 @@
 <div
+  class="ang-gui-error-container"
   [ngClass]="isRedAlert ? 'main-error redAlert' : 'main-error  greenAlert'"
   *ngIf="showAlertMessage"
 >
-  <img class="error-img-responsive" *ngIf="isRedAlert" height="30" />
-  <!-- src="assets/images/icons/Icons/Orion_priority-warning.svg" -->
-  <img class="error-img-responsive" height="30" *ngIf="!isRedAlert" />
-  <!-- src="assets/images/icons/Icons/Check_white.svg" -->
-  <div class="errormsg">
+  <div class="icon-container">
+    <ang-gui-icon
+      *ngIf="isRedAlert"
+      iconName="info-icon"
+      strokeColor="white"
+    ></ang-gui-icon>
+    <ang-gui-icon *ngIf="!isRedAlert" iconName="info-icon"></ang-gui-icon>
+  </div>
+  <div class="error-message-container">
     {{ alertMessage }}
   </div>
-  <div (click)="closeAlert()" class="classC1">
-    <ang-gui-icon iconName="close"></ang-gui-icon>
+  <div (click)="closeAlert()" class="icon-container">
+    <ang-gui-icon iconName="close" strokeColor="white"></ang-gui-icon>
   </div>
 </div>
