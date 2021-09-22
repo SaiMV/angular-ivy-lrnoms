@@ -8,7 +8,7 @@ import { AngGuiIconsComponent } from './icons/ang-gui-icons.component';
 @NgModule({
   imports: [CommonModule, FormsModule],
   declarations: [AngGuiAlertComponent, AngGuiIconsComponent],
-  exports: [AngGuiAlertComponent, AngGuiIconsComponent],
+  exports: [AngGuiAlertComponent, AngGuiIconsComponent,],
   providers: [AlertMessageService],
 })
 export class AngGuiModule {}

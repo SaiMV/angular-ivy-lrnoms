@@ -10,3 +10,6 @@ export class AngGuiIconsComponent {
 
   constructor() {}
 }
+export enum ICONS {
+  CLOSE,
+}
