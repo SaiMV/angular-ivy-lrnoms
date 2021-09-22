@@ -4,6 +4,7 @@
   border: 1px solid black;
   display: flex;
   align-items: center;
+  position: absolute;
 }
 .icon-container {
   width: 25px;
