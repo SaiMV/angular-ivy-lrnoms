@@ -14,8 +14,8 @@ export class AngGuiAlertComponent implements OnDestroy {
 
   alertSubscription: Subscription =
     this.alertMessageService.alertMessageCallBack.subscribe(
-      (data: any) => {
-        if(this.showAlertMessage){
+      (data: alertModel) => {
+        if (this.showAlertMessage) {
           return true;
         }
         let alertData = <alertModel>data;
@@ -50,11 +50,10 @@ export class AngGuiAlertComponent implements OnDestroy {
 }
 
 /**
- * Model class to add message, show and hide alertIcon.
+ * Model class for alert.
  *
  */
 class alertModel {
-  alertEnabled: any;
   message: any;
   errorType: any;
 }

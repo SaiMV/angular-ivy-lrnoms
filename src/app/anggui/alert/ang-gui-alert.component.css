@@ -1,7 +1,6 @@
 .ang-gui-error-container {
   width: 100%;
   height: 50px;
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
 }
@@ -26,8 +25,10 @@
   border: none;
 }
 .warning {
-  background-color: #ff9800 !important; border: none;
+  background-color: #ff9800 !important;
+  border: none;
 }
 .success {
-  background-color: green !important; border: none;
+  background-color: green !important;
+  border: none;
 }
