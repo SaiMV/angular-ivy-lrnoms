@@ -1,0 +1,25 @@
+.ang-gui-nav-nromal {
+  width: 100%;
+  z-index: 2;
+  /* background: #4d148c; */
+  /* background-color: #16192c !important; */
+  background-color: #022347 !important;
+  max-height: 75px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.25s;
+}
+.ang-gui-nav-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.ang-gui-nav-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
