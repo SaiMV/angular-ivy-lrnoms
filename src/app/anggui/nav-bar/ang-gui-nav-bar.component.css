@@ -10,6 +10,7 @@
   left: 0;
   transition: 0.25s;
 }
+
 .ang-gui-nav-wrapper {
   width: 100%;
   height: 50px;
@@ -27,19 +28,21 @@
 .ang-gui-nav-logo-container {
   height: 50px;
   width: 120px;
-  background-color: red;
 }
+
 .ang-gui-nav-desktop-menu-container {
   height: 50px;
   flex-basis: 1;
   flex-grow: 1;
   background-color: rgb(25, 0, 255);
 }
+
 .ang-gui-nav-search-bar-container {
   height: 50px;
   width: 50px;
   background-color: rgb(51, 255, 0);
 }
+
 .ang-gui-nav-mobile-menu-container {
   height: 50px;
   width: 50px;
