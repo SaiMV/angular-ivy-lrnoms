@@ -8,12 +8,25 @@ import { AlertMessageService } from '../../anggui/ang-gui-services/common-messag
 })
 export class HowToUseAngGUI {
   constructor(private alertMessageService: AlertMessageService) {}
+  showSuccessMessage() {
+    console.log('called');
+    this.alertMessageService.errorCallBackMsg({
+      errorType: 'success',
+      message: 'Hi, This is a simple alert.',
+    });
+  }
+  showWarningMessage() {
+    console.log('called');
+    this.alertMessageService.errorCallBackMsg({
+      errorType: 'warning',
+      message: 'Hi, This is a simple alert.',
+    });
+  }
 
   showErrorMessage() {
     console.log('called');
     this.alertMessageService.errorCallBackMsg({
-      alertEnabled: true,
-      isRedAlert: true,
+      errorType: 'error',
       message: 'Hi, This is a simple alert.',
     });
   }

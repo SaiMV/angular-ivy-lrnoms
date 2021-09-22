@@ -1,2 +1,12 @@
 <!-- adasd -->
-<button class="button" (click)="showErrorMessage()">Success Message</button>
+<button class="button success" (click)="showSuccessMessage()">
+  Success Message
+</button>
+<button class="button error" (click)="showErrorMessage()">Error Message</button>
+<button class="button warning" (click)="showWarningMessage()">
+  Warning Message
+</button>
+<ang-gui-alert
+  alertMessage="This is a nromal message"
+  [showAlertMessage]="true"
+></ang-gui-alert>

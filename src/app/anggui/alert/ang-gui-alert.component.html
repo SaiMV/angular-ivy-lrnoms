@@ -1,20 +1,28 @@
 <div
-  class="ang-gui-error-container"
-  [ngClass]="isRedAlert ? 'main-error redAlert' : 'main-error  greenAlert'"
+  class="ang-gui-error-container normal"
+  [ngClass]="errorType"
   *ngIf="showAlertMessage"
 >
   <div class="icon-container">
     <ang-gui-icon
-      *ngIf="isRedAlert"
       iconName="info-icon"
+      *ngIf="errorType !== 'normal'"
       strokeColor="white"
     ></ang-gui-icon>
-    <ang-gui-icon *ngIf="!isRedAlert" iconName="info-icon"></ang-gui-icon>
+    <ang-gui-icon
+      iconName="info-icon"
+      *ngIf="errorType == 'normal'"
+      strokeColor="black"
+    ></ang-gui-icon>
   </div>
   <div class="error-message-container">
     {{ alertMessage }}
   </div>
-  <div (click)="closeAlert()" class="icon-container">
+  <div
+    (click)="closeAlert()"
+    class="icon-container"
+    *ngIf="errorType !== 'normal'"
+  >
     <ang-gui-icon iconName="close" fillColor="white"></ang-gui-icon>
   </div>
 </div>

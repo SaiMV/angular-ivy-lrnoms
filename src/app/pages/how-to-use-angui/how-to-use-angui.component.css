@@ -1,10 +1,19 @@
 .button {
-  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   font-size: 16px;
+  margin: 5px;
+}
+.error {
+  background-color: #e8002e !important;
+}
+.warning {
+  background-color: #ff9800 !important;
+}
+.success {
+  background-color: green;
 }

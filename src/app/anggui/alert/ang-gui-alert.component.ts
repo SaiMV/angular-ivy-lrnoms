@@ -9,26 +9,19 @@ import { Subscription } from 'rxjs';
 })
 export class AngGuiAlertComponent implements OnDestroy {
   @Input() showAlertMessage: boolean = false;
-  alertMessage: String = '';
-  isRedAlert = true;
+  @Input() alertMessage: String = '';
+  @Input() errorType = 'normal';
 
   alertSubscription: Subscription =
     this.alertMessageService.alertMessageCallBack.subscribe(
       (data: any) => {
-        console.log('jj');
-        let alertData = <alertModel>data;
-        if (alertData.alertEnabled) {
-          this.showAlertMessage = true;
-          this.alertMessage = alertData.message;
-          if (alertData.isRedAlert != null) {
-            this.isRedAlert = alertData.isRedAlert;
-          } else {
-            this.isRedAlert = false;
-          }
-        } else {
-          this.showAlertMessage = false;
-          this.alertMessage = alertData.message;
+        if(this.showAlertMessage){
+          return true;
         }
+        let alertData = <alertModel>data;
+        this.showAlertMessage = true;
+        this.errorType = alertData.errorType;
+        this.alertMessage = alertData.message;
       },
       (err) => {
         this.showAlertMessage = false;
@@ -52,7 +45,7 @@ export class AngGuiAlertComponent implements OnDestroy {
   closeAlert() {
     this.showAlertMessage = false;
     this.alertMessage = '';
-    this.isRedAlert = false;
+    this.errorType = 'normal';
   }
 }
 
@@ -63,5 +56,5 @@ export class AngGuiAlertComponent implements OnDestroy {
 class alertModel {
   alertEnabled: any;
   message: any;
-  isRedAlert: any;
+  errorType: any;
 }
