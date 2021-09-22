@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class AngGuiIconsComponent {
   @Input() iconName: string = '';
-  @Input() fillColor: string = '';
-  @Input() strokeColor: string = '';
+  @Input() fillColor: string;
+  @Input() strokeColor: string;
 
   constructor() {}
 
