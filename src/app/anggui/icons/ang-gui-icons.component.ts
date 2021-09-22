@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./ang-gui-icons.component.css'],
 })
 export class AngGuiIconsComponent {
-  @Input() iconName: boolean = false;
+  @Input() iconName: string = "";
 
   constructor() {}
 }
