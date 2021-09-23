@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./ang-gui-input-box.component.css'],
 })
 export class AngGuiInputBoxComponent {
+  @Input() type: string = 'normal';
   @Input() placeHolder: string = '';
   constructor() {}
 }

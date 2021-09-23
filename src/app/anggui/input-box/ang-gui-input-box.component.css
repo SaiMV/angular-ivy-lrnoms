@@ -1,13 +1,27 @@
 input {
   outline: 0;
-  background: #f2f2f2;
   border: 0;
-  margin: 0 15px;
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
+  min-width: -webkit-fill-available;
+  margin: 15px 5px;
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 14px;
   font-family: 'Roboto', sans-serif;
+  max-height: 45px;
+}
+
+.normal {
+  background-color: rgb(240, 236, 236);
+}
+
+.under-lined {
+  border-bottom: 1px solid rgb(85, 84, 84);
+}
+
+.borderd {
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
