@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ang-gui-drop-down',
@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./ang-gui-drop-down.component.css'],
 })
 export class AngGuiDropDownComponent {
-  @Input() type: string = 'nomal';
+  toggleDropDown: boolean = false;
   constructor() {}
 }
