@@ -39,23 +39,16 @@
 .ang-gui-nav-search-bar-container {
   height: 50px;
   width: 50px;
-  background-color: rgb(51, 255, 0);
 }
 .ang-gui-nav-user-profile-menu-container,
-.ang-gui-nav-user-profile-menu-container ang-gui-icon{
-  height: 50px;
-  width: 50px;
-}
 .ang-gui-nav-mobile-menu-container {
   height: 50px;
   width: 50px;
 }
-.ang-gui-nav-user-profile-menu-container > ang-gui-icon > #svg2011 {
+
+.ang-gui-nav-search-bar-container ang-gui-icon ,
+.ang-gui-nav-user-profile-menu-container ang-gui-icon {
   display: block;
-  margin: auto;
-}
-.ang-gui-nav-user-profile-menu-container ang-gui-icon{
-    display: block;
 }
 .ang-gui-nav-menu {
   color: rgba(255, 255, 255, 0.5);

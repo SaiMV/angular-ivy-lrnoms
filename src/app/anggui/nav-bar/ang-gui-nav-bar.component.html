@@ -1,14 +1,15 @@
 <nav class="ang-gui-nav-nromal">
   <div class="ang-gui-nav-wrapper">
     <div class="ang-gui-nav-mobile-menu-container">
-    <ang-gui-icon
+      <ang-gui-icon
         [width]="35"
         [height]="35"
         [margin]="7.5"
         fillColor="white"
         strokeColor="black"
-        iconName="dotted-manu"
-      ></ang-gui-icon></div>
+        iconName="dotted-menu"
+      ></ang-gui-icon>
+    </div>
     <div class="ang-gui-nav-logo-container"><ng-content></ng-content></div>
     <div class="ang-gui-nav-desktop-menu-container">
       <div class="ang-gui-nav-menu">
@@ -30,7 +31,15 @@
         </div>
       </div>
     </div>
-    <div class="ang-gui-nav-search-bar-container"></div>
+    <div class="ang-gui-nav-search-bar-container">
+      <ang-gui-icon
+        [width]="35"
+        [height]="35"
+        [margin]="7.5"
+        strokeColor="white"
+        iconName="search"
+      ></ang-gui-icon>
+    </div>
     <div class="ang-gui-nav-user-profile-menu-container">
       <ang-gui-icon
         [width]="35"
