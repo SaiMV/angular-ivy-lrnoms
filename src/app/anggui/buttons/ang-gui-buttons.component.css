@@ -11,6 +11,12 @@
   line-height: 14px;
   font-family: 'Roboto', sans-serif;
 }
+.rounded-corner {
+  border-radius: 5px;
+}
+.rounded {
+  border-radius: 50px;
+}
 .nomal {
   border: 1px solid grey;
   color: black;
