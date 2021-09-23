@@ -3,8 +3,8 @@
     class="drop-down-text-container"
     (click)="toggleDropDown = !toggleDropDown"
   >
-    <div class="drop-down-text">Selected Text</div>
-    <!-- <div [ngClass]="toggleDropDown?'active drop-down-arrow': 'drop-down-arrow'"></div> -->
+    <div class="drop-down-text">Select</div>
+
     <div class="drop-down-arrow"></div>
   </div>
   <div *ngIf="toggleDropDown" class="active drop-down-list-container">
@@ -24,3 +24,4 @@
     </ul>
   </div>
 </div>
+<!-- <div [ngClass]="toggleDropDown?'active drop-down-arrow': 'drop-down-arrow'"></div> -->
