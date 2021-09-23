@@ -1,0 +1,98 @@
+.drop-down-container {
+  height: 40px;
+  /* width: calc(100% - 20px); */
+  min-width: 180px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin: 10px 8px;
+  /* padding: 10px; */
+  border: 2px solid #cccccc;
+  position: relative;
+}
+
+.drop-down-text-container {
+  min-width: 180px;
+  outline: none;
+  border: none;
+  margin: 8px 0px 8px 8px;
+  font-family: roboto;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  padding: 5px 2px 5px 0px;
+  width: calc(100% - 40px);
+  display: inline-block;
+}
+.drop-down-text {
+  display: inline-block;
+  width: calc(100% - 40px);
+  color: #8f959a;
+}
+.drop-down-arrow {
+  position: absolute;
+  display: inline-block;
+  float: right;
+  right: 10px;
+  top: 8px;
+}
+.drop-down-arrow:after {
+  content: url('../../../assets/icons/arrow-down.png');
+  position: relative;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 2px 0px;
+  display: inline-block;
+}
+.active.drop-down-arrow:after {
+  content: url('../../../assets/icons/arrow-left.ico');
+  position: relative;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 2px 0px;
+  display: inline-block;
+}
+
+.active.drop-down-list-container {
+  height: auto;
+  max-height: 194px;
+  width: calc(100% - 40px);
+  position: absolute;
+  outline: none;
+  border: none;
+  margin: 0px;
+  margin-top: 42px;
+  font-family: roboto;
+  font-size: 16px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 100000000;
+  background: white;
+  border-bottom: 2px solid #cccccc;
+}
+
+.active.drop-down-list-container ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 2px;
+  border: 2px solid #cccccc;
+  border-bottom: none;
+}
+
+.active.drop-down-list-container ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 5px;
+  padding-left: 23px;
+  width: calc(100% - 29px);
+}
+
+.active.drop-down-list-container ul li:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+.active.drop-down-list-container ul li:hover {
+  background-color: #d8d9da;
+}
