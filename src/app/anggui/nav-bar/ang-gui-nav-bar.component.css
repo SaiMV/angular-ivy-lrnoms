@@ -49,12 +49,12 @@
 }
 .ang-gui-nav-menu {
   color: rgba(255, 255, 255, 0.5);
-  display: flex;
-  position: absolute;
+  display: inline-flex;
+  position: relative;
   padding: 5px 10px;
 }
-.ang-gui-nav-menu::after {
-  display: inline-block;
+.nav-link::after {
+  display: inline-flex;
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: '';
@@ -71,7 +71,12 @@
 }
 
 .ang-gui-nav-menu:hover .dropdown-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.ang-gui-nav-menu:hover .dropdown-menu .dropdown-item:hover {
+  display: flex;
+  background-color: #022347;
 }
 .nav-link {
   text-decoration: none;
@@ -85,7 +90,7 @@
 .dropdown-menu {
   text-decoration: none;
   position: absolute;
-  top: 100%;
+  top: 40px;
   left: 0;
   z-index: 1000;
   display: none;
@@ -106,7 +111,6 @@
 .dropdown-item {
   text-decoration: none;
   display: block;
-  width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
