@@ -1,6 +1,5 @@
 .drop-down-container {
   height: 40px;
-  min-width: 180px;
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
@@ -9,7 +8,7 @@
   position: relative;
 }
 .drop-down-text-container {
-  min-width: 180px;
+  /* min-width: 180px; */
   outline: none;
   border: none;
   margin: 8px 0px 8px 8px;
@@ -23,8 +22,9 @@
   font-family: 'Roboto', sans-serif;
 }
 .drop-down-text {
-  display: inline-block;
-  width: calc(100% - 10px);
+  display: inline-flex;
+  width:calc(100% - 10px);
+  padding: 0px 5px;
   color: #8f959a;
   font-size: 14px;
   line-height: 14px;
@@ -32,7 +32,7 @@
 }
 .drop-down-arrow {
   display: inline-flex;
-    float: right;
+  float: right;
   top: 8px;
 }
 .drop-down-arrow:after {
@@ -81,7 +81,6 @@
   list-style: none;
   padding: 0px;
   margin: 0px;
-  /* border: 1px solid #ccc; */
   border-bottom: none;
 }
 .active.drop-down-list-container ul li {
