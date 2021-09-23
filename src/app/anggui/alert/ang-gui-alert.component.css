@@ -15,6 +15,7 @@
 .normal {
   background-color: #f4f5f5 !important;
   border: 1px solid black;
+  margin: 0px 5px;
 }
 .normal .error-message-container {
   color: black;
