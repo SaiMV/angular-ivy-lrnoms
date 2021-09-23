@@ -70,13 +70,19 @@
   float: none;
 }
 
+
 .ang-gui-nav-menu:hover .dropdown-menu {
   display: flex;
   flex-direction: column;
+  min-width: -webkit-fill-available;
+  margin: 0px 9px;
 }
 .ang-gui-nav-menu:hover .dropdown-menu .dropdown-item:hover {
   display: flex;
   background-color: #022347;
+  color: white;
+  padding:8px 10px;
+  margin: 0px;
 }
 .nav-link {
   text-decoration: none;
@@ -87,16 +93,27 @@
   border: 0;
   color: white;
 }
+.nav-link-container {
+  display: flex;
+}
+.ang-gui-nav-menu:hover .nav-link-container {
+  background-color: white;
+}
+.ang-gui-nav-menu:hover .nav-link-text {
+  color: #212529 !important;
+}
+.ang-gui-nav-menu:hover .nav-link {
+  color: #797c80;
+}
 .dropdown-menu {
   text-decoration: none;
   position: absolute;
-  top: 40px;
+  top: 44px;
   left: 0;
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
+  padding:  0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
@@ -104,14 +121,13 @@
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border: 1px solid rgba(19, 18, 18, 0.15);
+  /* border-radius: 0.25rem; */
 }
 
 .dropdown-item {
   text-decoration: none;
   display: block;
-  padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
   color: #212529;
@@ -119,4 +135,7 @@
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  display: flex;
+  padding:8px 10px;
+  margin: 0px ;
 }
