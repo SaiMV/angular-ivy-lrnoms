@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ang-gui-button',
@@ -6,5 +6,6 @@ import { Component} from '@angular/core';
   styleUrls: ['./ang-gui-buttons.component.css'],
 })
 export class AngGuiButtonsComponent {
+  @Input() type:string = 'nomal';
   constructor() {}
 }

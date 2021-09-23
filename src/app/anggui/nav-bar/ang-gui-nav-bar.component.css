@@ -1,14 +1,16 @@
 .ang-gui-nav-nromal {
   width: 100%;
   z-index: 2;
-  /* background: #4d148c; */
-  /* background-color: #16192c !important; */
   background-color: #022347 !important;
   max-height: 75px;
   position: relative;
   top: 0;
   left: 0;
   transition: 0.25s;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 .ang-gui-nav-wrapper {
@@ -46,7 +48,7 @@
   width: 50px;
 }
 
-.ang-gui-nav-search-bar-container ang-gui-icon ,
+.ang-gui-nav-search-bar-container ang-gui-icon,
 .ang-gui-nav-user-profile-menu-container ang-gui-icon {
   display: block;
 }

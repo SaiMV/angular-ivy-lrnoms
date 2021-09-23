@@ -3,10 +3,13 @@
   height: 50px;
   display: flex;
   align-items: center;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Roboto', sans-serif;
 }
 .icon-container {
   width: 25px;
-  padding: 5px;
+  padding: 0 5px;
 }
 .error-message-container {
   width: calc(100% - 50px);

@@ -1,11 +1,13 @@
 <!-- adasd -->
-<button class="button success" (click)="showSuccessMessage()">
+<ang-gui-button type="success" (click)="showSuccessMessage()">
   Success message
-</button>
-<button class="button error" (click)="showErrorMessage()">Error message</button>
-<button class="button warning" (click)="showWarningMessage()">
+</ang-gui-button>
+<ang-gui-button type="error" (click)="showErrorMessage()"
+  >Error message</ang-gui-button
+>
+<ang-gui-button type="warning" (click)="showWarningMessage()">
   Warning message
-</button>
+</ang-gui-button>
 
 <ang-gui-alert
   style="margin:5px;display:block"
