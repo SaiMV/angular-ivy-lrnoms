@@ -7,6 +7,7 @@ import { AngGuiIconsComponent } from './icons/ang-gui-icons.component';
 import { AngGuiNavBarComponent } from './nav-bar/ang-gui-nav-bar.component';
 import { AngGuiButtonsComponent } from './buttons/ang-gui-buttons.component';
 import { AngGuiInputBoxComponent } from './input-box/ang-gui-input-box.component';
+import { AngGuiCheckBoxComponent } from './check-box/ang-gui-check-box.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -16,6 +17,7 @@ import { AngGuiInputBoxComponent } from './input-box/ang-gui-input-box.component
     AngGuiNavBarComponent,
     AngGuiButtonsComponent,
     AngGuiInputBoxComponent,
+    AngGuiCheckBoxComponent,
   ],
   exports: [
     AngGuiAlertComponent,
@@ -23,6 +25,7 @@ import { AngGuiInputBoxComponent } from './input-box/ang-gui-input-box.component
     AngGuiNavBarComponent,
     AngGuiButtonsComponent,
     AngGuiInputBoxComponent,
+    AngGuiCheckBoxComponent,
   ],
   providers: [AlertMessageService],
 })
