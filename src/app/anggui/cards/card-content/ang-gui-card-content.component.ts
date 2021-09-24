@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'ang-gui-card-header',
-  templateUrl: './ang-gui-card-header.component.html',
-  styleUrls: ['./ang-gui-card-header.component.css'],
+  selector: 'ang-gui-card-content',
+  templateUrl: './ang-gui-card-content.component.html',
+  styleUrls: ['./ang-gui-card-content.component.css'],
 })
 export class AngGuiCardContentComponent {
   @Input() type: string = 'nomal';
