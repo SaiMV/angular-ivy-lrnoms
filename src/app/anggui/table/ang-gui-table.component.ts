@@ -46,11 +46,13 @@ import { DummyTableConfig } from '../../anggui/table/table-models/table-dummy-co
     ]),
   ],
 })
-export class AnguiTableComponent implements OnInit {
+export class AngGuiTableComponent implements OnInit {
   @Input() tableName: string = '';
   @Output() linkTextClicked = new EventEmitter();
   @Input() rowselectionColorNeeded: boolean = true;
   @Input() indexSelectedRow = -1;
+  @Input() disableBody: any;
+  @Input() indexSerachSelectedRow: any;
   @Input() rowselectionColr: boolean = true;
   @Output() selectedRowDataObject: any = new EventEmitter();
   @Output() onBlur = new EventEmitter();
@@ -114,7 +116,7 @@ export class AnguiTableComponent implements OnInit {
     } catch (err) {}
   }
 
-  clickOnLink(colField, link) {
+  clickOnLink(colField?: any, link?: any) {
     this.linkTextClicked.emit({ colField: colField, link: link });
   }
 

@@ -14,6 +14,7 @@ import { AngGuiCardHeaderComponent } from './cards/card-header/ang-gui-card-head
 import { AngGuiCardFooterComponent } from './cards/card-footer/ang-gui-card-footer.component';
 import { AngGuiCardContentComponent } from './cards/card-content/ang-gui-card-content.component';
 import { AngGuiRadioButtonComponent } from './radio-button/ang-gui-radio-button.component';
+import { AngGuiTableComponent } from './table/ang-gui-table.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -30,6 +31,7 @@ import { AngGuiRadioButtonComponent } from './radio-button/ang-gui-radio-button.
     AngGuiCardFooterComponent,
     AngGuiCardContentComponent,
     AngGuiRadioButtonComponent,
+    AngGuiTableComponent,
   ],
   exports: [
     AngGuiAlertComponent,
@@ -44,6 +46,7 @@ import { AngGuiRadioButtonComponent } from './radio-button/ang-gui-radio-button.
     AngGuiCardFooterComponent,
     AngGuiCardContentComponent,
     AngGuiRadioButtonComponent,
+    AngGuiTableComponent,
   ],
   providers: [AlertMessageService],
 })
