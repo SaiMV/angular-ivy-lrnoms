@@ -9,6 +9,7 @@ import { AngGuiButtonsComponent } from './buttons/ang-gui-buttons.component';
 import { AngGuiInputBoxComponent } from './input-box/ang-gui-input-box.component';
 import { AngGuiCheckBoxComponent } from './check-box/ang-gui-check-box.component';
 import { AngGuiDropDownComponent } from './drop-down/ang-gui-drop-down.component';
+import { AngGuiCardsComponent } from './cards/ang-gui-cards.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -20,6 +21,7 @@ import { AngGuiDropDownComponent } from './drop-down/ang-gui-drop-down.component
     AngGuiInputBoxComponent,
     AngGuiCheckBoxComponent,
     AngGuiDropDownComponent,
+    AngGuiCardsComponent,
   ],
   exports: [
     AngGuiAlertComponent,
@@ -29,6 +31,7 @@ import { AngGuiDropDownComponent } from './drop-down/ang-gui-drop-down.component
     AngGuiInputBoxComponent,
     AngGuiCheckBoxComponent,
     AngGuiDropDownComponent,
+    AngGuiCardsComponent,
   ],
   providers: [AlertMessageService],
 })
