@@ -1,20 +1,29 @@
 /* Add application styles & imports to this file! */
 /* You can add global styles to this file, and also import other style files */
-*{
-
-  user-select: none;
-  -webkit-user-drag: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+* {
+  -webkit-tap-highlight-color: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -khtml-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 ::-webkit-scrollbar {
-  background-color: rgba(16,16,16,.05);
+  background-color: rgb(247 247 247);
   width: 2px;
-  height: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(50 195 202);
+  width: 2px;
+  background-color: rgb(183 183 183);
 }
-html,body{
+html,
+body {
   margin: 0px;
   padding: 0px;
   height: 100vh;

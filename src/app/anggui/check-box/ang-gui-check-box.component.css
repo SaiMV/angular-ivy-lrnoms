@@ -1,7 +1,9 @@
 .check-box {
   position: relative;
   display: inline-block;
-  width: auto;
+  width: 20px;
+  height: 20px;
+  margin: 10px 5px;
 }
 
 .check-box label {
