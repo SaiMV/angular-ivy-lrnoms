@@ -82,7 +82,7 @@ export class AngGuiTableComponent implements OnInit {
 
     this.dataSetForTable = dummyConfig.dataModelForTableSmall;
 
-    setInterval(() => {
+    // setInterval(() => {
       // this.zone.runOutsideAngular(() => {
 
       this.dataSetForTable.push(dummyConfig.dataModelForTableSmall[0]);
@@ -97,7 +97,7 @@ export class AngGuiTableComponent implements OnInit {
       //     element['lane8'] = element['lane8']+1
       //   });
       // });
-    }, 2000);
+    // }, 2000);
   }
 
   trackByIds(index, item) {
