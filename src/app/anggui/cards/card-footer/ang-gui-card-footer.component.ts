@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ang-gui-card-footer',
@@ -6,6 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./ang-gui-card-footer.component.css'],
 })
 export class AngGuiCardFooterComponent {
-  @Input() type: string = 'nomal';
   constructor() {}
 }
