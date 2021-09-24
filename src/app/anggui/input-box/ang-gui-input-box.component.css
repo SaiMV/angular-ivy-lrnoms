@@ -12,7 +12,9 @@ input {
   font-family: 'Roboto', sans-serif;
   max-height: 45px;
 }
-
+input::placeholder {
+  color: #8f959a;
+}
 .normal {
   background-color: #f2f2f2;
 }

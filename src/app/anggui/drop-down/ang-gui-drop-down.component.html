@@ -1,27 +1,31 @@
-<div class="drop-down-container">
+<div class="ang-gui-drop-down-container">
   <div
-    class="drop-down-text-container"
+    class="ang-gui-drop-down-text-container"
+    
     (click)="toggleDropDown = !toggleDropDown"
   >
-    <div class="drop-down-text">Select</div>
+    <div
+      class="ang-gui-drop-down-text"
+      [ngClass]="selectedValue !== 'Select' ? 'ang-gui-drop-selection-changed' : ''"
+    >
+      {{ selectedValue }}
+    </div>
 
-    <div class="drop-down-arrow"></div>
+    <div [ngClass]="toggleDropDown ? 'active ang-gui-drop-down-arrow' : 'ang-gui-drop-down-arrow'"></div>
   </div>
-  <div *ngIf="toggleDropDown" class="active drop-down-list-container">
-    <ul (click)="toggleDropDown = !toggleDropDown">
-      <li>Text 1</li>
-      <li>Text 2</li>
-      <li>Text 3</li>
-      <li>Text 4</li>
-      <li>Text 1</li>
-      <li>Text 2</li>
-      <li>Text 3</li>
-      <li>Text 4</li>
-      <li>Text 1</li>
-      <li>Text 2</li>
-      <li>Text 3</li>
-      <li>Text 4</li>
+  <div *ngIf="toggleDropDown" class="active ang-gui-drop-down-list-container">
+    <ul>
+      <li
+        (click)="selectedValueChange(dropDownModel[i])"
+        *ngFor="
+          let entry of dropDownModel;
+          trackBy: trackByFunction;
+          let i = index
+        "
+      >
+        {{ entry.value }}
+      </li>
     </ul>
   </div>
 </div>
-<!-- <div [ngClass]="toggleDropDown?'active drop-down-arrow': 'drop-down-arrow'"></div> -->
+

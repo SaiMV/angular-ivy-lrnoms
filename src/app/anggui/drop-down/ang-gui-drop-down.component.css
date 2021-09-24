@@ -1,4 +1,4 @@
-.drop-down-container {
+.ang-gui-drop-down-container {
   height: 40px;
   display: flex;
   flex-grow: 1;
@@ -7,8 +7,7 @@
   border: 1px solid #ccc;
   position: relative;
 }
-.drop-down-text-container {
-  /* min-width: 180px; */
+.ang-gui-drop-down-text-container {
   outline: none;
   border: none;
   margin: 8px 0px 8px 8px;
@@ -21,21 +20,24 @@
   line-height: 14px;
   font-family: 'Roboto', sans-serif;
 }
-.drop-down-text {
+.ang-gui-drop-down-text {
   display: inline-flex;
-  width:calc(100% - 10px);
+  width: calc(100% - 10px);
   padding: 0px 5px;
   color: #8f959a;
   font-size: 14px;
   line-height: 14px;
   font-family: 'Roboto', sans-serif;
 }
-.drop-down-arrow {
+.ang-gui-drop-selection-changed {
+  color: black;
+}
+.ang-gui-drop-down-arrow {
   display: inline-flex;
   float: right;
   top: 8px;
 }
-.drop-down-arrow:after {
+.ang-gui-drop-down-arrow:after {
   display: inline-flex;
   content: '';
   align-self: center;
@@ -44,7 +46,7 @@
   border-bottom: 0;
   border-left: 0.3em solid transparent;
 }
-.active.drop-down-arrow:after {
+.active.ang-gui-drop-down-arrow:after {
   display: inline-flex;
   content: '';
   align-self: center;
@@ -54,9 +56,7 @@
   border-right: 0.3em solid transparent;
 }
 
-.active.drop-down-list-container {
-  height: auto;
-  max-height: 194px;
+.active.ang-gui-drop-down-list-container {
   position: absolute;
   height: auto;
   max-height: 194px;
@@ -70,28 +70,30 @@
   overflow-y: auto;
   overflow-x: hidden;
   flex-basis: 1;
-  /* flex-grow: 1; */
   z-index: 100000000;
   background: white;
   border: 1px solid #ccc;
 }
 
-.active.drop-down-list-container ul {
+.active.ang-gui-drop-down-list-container ul {
   text-decoration: none;
   list-style: none;
   padding: 0px;
   margin: 0px;
   border-bottom: none;
 }
-.active.drop-down-list-container ul li {
+
+.active.ang-gui-drop-down-list-container ul li {
   text-decoration: none;
   list-style: none;
-  padding: 10px 5px;
+  padding: 10px 15px;
   width: calc(100% - 10px);
 }
+
 .active.drop-down-list-container ul li:nth-child(odd) {
   background-color: #f3f3f3;
 }
+
 .active.drop-down-list-container ul li:hover {
   background-color: #d8d9da;
 }
