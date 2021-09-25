@@ -66,7 +66,7 @@
           >
             <td
               class="sticky-column"
-              class="min-col-table"
+              [ngClass]="config.isIconAvailable ? 'min-width-150' : ''"
               (click)="selectedRowCol(i, j)"
               [id]="'tableBodyRow' + tableName + i + j"
               *ngFor="
