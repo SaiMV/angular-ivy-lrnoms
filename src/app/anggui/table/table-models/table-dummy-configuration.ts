@@ -375,7 +375,7 @@ export class DummyTableConfig {
       lane5: 5,
       lane6: 6,
       lane7: 7,
-      lane8: 8,
+      lane8: -8,
     },
     {
       lane1: 'Text with Icon',
@@ -385,7 +385,7 @@ export class DummyTableConfig {
       lane5: 5,
       lane6: 6,
       lane7: 7,
-      lane8: 8,
+      lane8: -8,
     },
     {
       lane1: 'Text with Icon',
@@ -395,7 +395,7 @@ export class DummyTableConfig {
       lane5: 5,
       lane6: 6,
       lane7: 7,
-      lane8: 8,
+      lane8: -8,
     },
     {
       lane1: 'Text with Icon',

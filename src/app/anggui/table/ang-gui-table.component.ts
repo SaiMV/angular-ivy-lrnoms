@@ -83,20 +83,20 @@ export class AngGuiTableComponent implements OnInit {
     this.dataSetForTable = dummyConfig.dataModelForTableSmall;
 
     // setInterval(() => {
-      // this.zone.runOutsideAngular(() => {
+    // this.zone.runOutsideAngular(() => {
 
-      this.dataSetForTable.push(dummyConfig.dataModelForTableSmall[0]);
-      // });
+    this.dataSetForTable.push(dummyConfig.dataModelForTableSmall[0]);
+    // });
 
-      //  },8000);
-      //  setInterval(() =>{
-      //   this.zone.runOutsideAngular(() => {
+    //  },8000);
+    //  setInterval(() =>{
+    //   this.zone.runOutsideAngular(() => {
 
-      //   this.dataSetForTable.forEach(element => {
-      //     console.log(element)
-      //     element['lane8'] = element['lane8']+1
-      //   });
-      // });
+    //   this.dataSetForTable.forEach(element => {
+    //     console.log(element)
+    //     element['lane8'] = element['lane8']+1
+    //   });
+    // });
     // }, 2000);
   }
 
@@ -125,21 +125,17 @@ export class AngGuiTableComponent implements OnInit {
   }
 
   getGraphFeldColor(fieldValue) {
-    if(parseFloat(fieldValue) <= 10 && parseFloat(fieldValue) > 0){
-      return 'black'
-    } 
-    else if(parseFloat(fieldValue) <= 20 && parseFloat(fieldValue) > 10){
-      return 'blue'
-    } 
-    else if(parseFloat(fieldValue) >21 && parseFloat(fieldValue) < 50){
-      return 'orange'
-    }
-    else if(parseFloat(fieldValue) >51 && parseFloat(fieldValue) < 70){
-      return 'orange'
-    }
-    else if(parseFloat(fieldValue) >51 && parseFloat(fieldValue) < 70){
-      return 'green'
-    }else{
+    if (parseFloat(fieldValue) <= 10 && parseFloat(fieldValue) > 0) {
+      return 'black';
+    } else if (parseFloat(fieldValue) <= 20 && parseFloat(fieldValue) > 10) {
+      return 'blue';
+    } else if (parseFloat(fieldValue) > 21 && parseFloat(fieldValue) < 50) {
+      return 'orange';
+    } else if (parseFloat(fieldValue) > 51 && parseFloat(fieldValue) < 70) {
+      return 'orange';
+    } else if (parseFloat(fieldValue) > 51 && parseFloat(fieldValue) <= 100) {
+      return 'green';
+    } else {
       return 'red';
     }
   }
