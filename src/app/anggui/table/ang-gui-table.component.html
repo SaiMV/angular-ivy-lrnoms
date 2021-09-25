@@ -1,6 +1,8 @@
 <section>
   <div class="table-top-option-container">
-    <h1 (click)="taggleTableMenu()">Fixed Table header</h1>
+    <h1 style="margin: 0px;align-self:center;" (click)="taggleTableMenu()">
+      Fixed Table header
+    </h1>
   </div>
   <div class="table-scroll-container" (scroll)="divScroll($event)">
     <div class="table-menu-overlay" [@fade-in-overlay] *ngIf="expanded">
