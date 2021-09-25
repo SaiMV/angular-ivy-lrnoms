@@ -245,7 +245,8 @@ tr th div {
   height: 20px;
   width: 100%;
   z-index: 1;
-  color: grey;
+  /* color: grey; */
+  color: black;
   text-align: center;
   /* padding: 3px; */
   display: flex;
