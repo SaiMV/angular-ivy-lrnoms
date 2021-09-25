@@ -14,7 +14,6 @@
   </div>
   <div class="table-scroll-container" (scroll)="divScroll($event)">
     <div class="table-menu-overlay" [@fade-in-overlay] *ngIf="expanded">
-      <!-- <div >close</div> -->
       <div
         class="table-menu-container"
         [@toggleMenu]="expanded ? 'expanded' : 'collapsed'"
@@ -25,7 +24,7 @@
         <div class="table-menu-items" (click)="taggleTableMenu()">
           Switch To Editable Mode
         </div>
-        <div class="table-menu-items" (click)="taggleTableMenu()">Menu 3</div>
+        <div class="table-menu-items" (click)="taggleTableMenu()">Enable Pagination</div>
         <div class="table-menu-items" (click)="taggleTableMenu()">Menu 4</div>
         <div class="table-menu-items" (click)="taggleTableMenu()">Menu 5</div>
       </div>
@@ -92,12 +91,6 @@
                 [iconName]="config.iconName"
                 [strokeColor]="config.iconColor"
               ></ang-gui-icon>
-              <!-- <img *ngIf="config.isIconAvailable" class="table-row-td-icon"
-            tooltip="this will be displayed as a tooltip" style="z-index: 100;    padding-left: 0px; display: inline-block;float: left; border-radius: 20px;"
-            [src]="config.iconUrl" />
-          <img *ngIf="config.showOnlyIcon" class="table-row-td-icon"
-            tooltip="this will be displayed as a tooltip" style="z-index: 100;     padding-left: 0px;display: inline-block;float: left; border-radius: 20px;"
-            [src]="config.iconUrl" /> -->
               <span
                 *ngIf="config.isLinkField && !config.showOnlyIcon"
                 class="text-link"

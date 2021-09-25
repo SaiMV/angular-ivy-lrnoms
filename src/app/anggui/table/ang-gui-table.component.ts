@@ -125,10 +125,23 @@ export class AngGuiTableComponent implements OnInit {
   }
 
   getGraphFeldColor(fieldValue) {
-    // if (this.graphFeildThreshold != null && this.graphFeildThreshold != "") {
-    //   return (parseFloat(fieldValue) >= parseFloat(this.graphFeildThreshold)) ? 'red' : 'black'
-    // }
-    return parseFloat(fieldValue) >= 21 ? 'red' : 'black';
+    if(parseFloat(fieldValue) <= 10 && parseFloat(fieldValue) > 0){
+      return 'black'
+    } 
+    else if(parseFloat(fieldValue) <= 20 && parseFloat(fieldValue) > 10){
+      return 'blue'
+    } 
+    else if(parseFloat(fieldValue) >21 && parseFloat(fieldValue) < 50){
+      return 'orange'
+    }
+    else if(parseFloat(fieldValue) >51 && parseFloat(fieldValue) < 70){
+      return 'orange'
+    }
+    else if(parseFloat(fieldValue) >51 && parseFloat(fieldValue) < 70){
+      return 'green'
+    }else{
+      return 'red';
+    }
   }
 
   onRowSelectionColor(disableBody, indxSelectedRow, indxSerachSelectedRow, i) {
