@@ -1,79 +1,160 @@
 <section>
-
-<div class="table-top-option-container">
-  <h1 (click)="taggleTableMenu()">Fixed Table header</h1>
-</div>
-<div class="table-scroll-container" (scroll)="divScroll($event)">
-  <div class="table-menu-overlay" [@fade-in-overlay] *ngIf="expanded">
-    <!-- <div >close</div> -->
-    <div class="table-menu-container" [@toggleMenu]="expanded ? 'expanded': 'collapsed'">
-      <div class="table-menu-items" (click)="taggleTableMenu()"> Full Screen Table</div>
-      <div class="table-menu-items" (click)="taggleTableMenu()">Switch To Editable Mode</div>
-      <div class="table-menu-items" (click)="taggleTableMenu()"> Menu 3</div>
-      <div class="table-menu-items" (click)="taggleTableMenu()"> Menu 4</div>
-      <div class="table-menu-items" (click)="taggleTableMenu()"> Menu 5</div>
-    </div>
+  <div class="table-top-option-container">
+    <h1 (click)="taggleTableMenu()">Fixed Table header</h1>
   </div>
-  <div class="sticky-container">
-
-  <table #dataTable class="sticky-table">
-      <thead >
+  <div class="table-scroll-container" (scroll)="divScroll($event)">
+    <div class="table-menu-overlay" [@fade-in-overlay] *ngIf="expanded">
+      <!-- <div >close</div> -->
+      <div
+        class="table-menu-container"
+        [@toggleMenu]="expanded ? 'expanded' : 'collapsed'"
+      >
+        <div class="table-menu-items" (click)="taggleTableMenu()">
+          Full Screen Table
+        </div>
+        <div class="table-menu-items" (click)="taggleTableMenu()">
+          Switch To Editable Mode
+        </div>
+        <div class="table-menu-items" (click)="taggleTableMenu()">Menu 3</div>
+        <div class="table-menu-items" (click)="taggleTableMenu()">Menu 4</div>
+        <div class="table-menu-items" (click)="taggleTableMenu()">Menu 5</div>
+      </div>
+    </div>
+    <div class="sticky-container">
+      <table #dataTable class="sticky-table">
+        <thead>
           <tr class="header" #theadTable>
-              <th [colSpan]="config.headerConfig.mergedRows" 
-                *ngFor="let config of tableMainConfigs;let i= index;">
-                <div >{{config.headerConfig.headerName}}</div>
-              </th>
-            </tr>
-      </thead>
-    <thead >
-        <tr class="header" #theadTable>
-            <th  class="min-col-table"
-              *ngFor="let config of tableDataConfigs;let i= index;">
-              <div class="header-with-sorting ascending">{{config.headerName}}</div>
+            <th
+              [colSpan]="config.headerConfig.mergedRows"
+              *ngFor="let config of tableMainConfigs; let i = index"
+            >
+              <div>{{ config.headerConfig.headerName }}</div>
             </th>
           </tr>
-    </thead>
-    <tbody>
-      <tr class="dataRow" (click)="emitOnRowSelect(dataModel,i)" [id]="tableName+'tableBodyRow'+i"
-        [ngClass]="onRowSelectionColor(disableBody,indexSelectedRow,indexSerachSelectedRow,i)"
-        *ngFor="let dataModel of dataSetForTable;trackBy: trackByIds; let i = index; let first = first;">
-        <td class="sticky-column" class="min-col-table"
-          (click)="selectedRowCol(i,j)" [id]="'tableBodyRow'+tableName+i+j"
-          *ngFor="let config of tableDataConfigs;trackBy: trackByIds;let j= index;">
-
-          <img *ngIf="config.isIconAvailable" class="table-row-td-icon"
+        </thead>
+        <thead>
+          <tr class="header" #theadTable>
+            <th
+              class="min-col-table"
+              *ngFor="let config of tableDataConfigs; let i = index"
+            >
+              <div class="header-with-sorting ascending">
+                {{ config.headerName }}
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="dataRow"
+            (click)="emitOnRowSelect(dataModel, i)"
+            [id]="tableName + 'tableBodyRow' + i"
+            [ngClass]="
+              onRowSelectionColor(
+                disableBody,
+                indexSelectedRow,
+                indexSerachSelectedRow,
+                i
+              )
+            "
+            *ngFor="
+              let dataModel of dataSetForTable;
+              trackBy: trackByIds;
+              let i = index;
+              let first = first
+            "
+          >
+            <td
+              class="sticky-column"
+              class="min-col-table"
+              (click)="selectedRowCol(i, j)"
+              [id]="'tableBodyRow' + tableName + i + j"
+              *ngFor="
+                let config of tableDataConfigs;
+                trackBy: trackByIds;
+                let j = index
+              "
+            >
+              <ang-gui-icon
+                class="table-row-td-icon"
+                style="z-index: 100;    padding-left: 0px; display: inline-block;float: left; border-radius: 20px;"
+                [iconName]="config.iconName"
+                [strokeColor]="config.iconColor"
+              ></ang-gui-icon>
+              <!-- <img *ngIf="config.isIconAvailable" class="table-row-td-icon"
             tooltip="this will be displayed as a tooltip" style="z-index: 100;    padding-left: 0px; display: inline-block;float: left; border-radius: 20px;"
             [src]="config.iconUrl" />
           <img *ngIf="config.showOnlyIcon" class="table-row-td-icon"
             tooltip="this will be displayed as a tooltip" style="z-index: 100;     padding-left: 0px;display: inline-block;float: left; border-radius: 20px;"
-            [src]="config.iconUrl" />
-          <span *ngIf="config.isLinkField && !config.showOnlyIcon" class="text-link"
-            (click)="clickOnLink(config.linkURL)"
-            style="vertical-align: middle;    display: inline-block;
+            [src]="config.iconUrl" /> -->
+              <span
+                *ngIf="config.isLinkField && !config.showOnlyIcon"
+                class="text-link"
+                (click)="clickOnLink(config.linkURL)"
+                style="vertical-align: middle;    display: inline-block;
             float: left;
             width: calc(100% - 23px);
-            padding-left: 5px;">{{dataModel[config.rowColField]}}</span>
-          <span *ngIf="config.isLabelFeild" [style.color]="config.textColor"
-            (click)="clickOnLink(config.linkURL)"
-            style="vertical-align: middle;    display: inline-block;
+            padding-left: 5px;"
+                >{{ dataModel[config.rowColField] }}</span
+              >
+              <span
+                *ngIf="config.isLabelFeild"
+                [style.color]="config.textColor"
+                (click)="clickOnLink(config.linkURL)"
+                style="vertical-align: middle;    display: inline-block;
             float: left;
             width: calc(100% - 33px);
-            padding-left: 5px;">{{dataModel[config.rowColField]}}</span>
-          <div *ngIf="config.isGrapghField" class="percentage-graph-conainer">
-            <div style="height:100%;" [style.width.%]="dataModel[config.rowColField]"
-              [style.background-color]="getGraphFeldColor(dataModel[config.rowColField])">
-            </div>
-            <div class="percentage-graph-text">{{dataModel[config.rowColField]}}%</div>
-          </div>
-          <input *ngIf="config.isEditableFiled"
-            (focus)="onInputFieldFocus($event,dataModel,config.rowColField,dataModel[config.rowColField])"
-            (keyup)="onInputFieldKeyUp($event,dataModel,config.rowColField,dataModel[config.rowColField])"
-            (blur)="onInputFieldBlur($event,dataModel,config.rowColField, dataModel[config.rowColField])"
-            class="table-input" [value]="dataModel[config.rowColField]" />
-        </td>
-      </tr>
-    </tbody>
-    <!-- <tfoot [style.top.px]="headFixPosition">
+            padding-left: 5px;"
+                >{{ dataModel[config.rowColField] }}</span
+              >
+              <div
+                *ngIf="config.isGrapghField"
+                class="percentage-graph-conainer"
+              >
+                <div
+                  style="height:100%;"
+                  [style.width.%]="dataModel[config.rowColField]"
+                  [style.background-color]="
+                    getGraphFeldColor(dataModel[config.rowColField])
+                  "
+                ></div>
+                <div class="percentage-graph-text">
+                  {{ dataModel[config.rowColField] }}%
+                </div>
+              </div>
+              <input
+                *ngIf="config.isEditableFiled"
+                (focus)="
+                  onInputFieldFocus(
+                    $event,
+                    dataModel,
+                    config.rowColField,
+                    dataModel[config.rowColField]
+                  )
+                "
+                (keyup)="
+                  onInputFieldKeyUp(
+                    $event,
+                    dataModel,
+                    config.rowColField,
+                    dataModel[config.rowColField]
+                  )
+                "
+                (blur)="
+                  onInputFieldBlur(
+                    $event,
+                    dataModel,
+                    config.rowColField,
+                    dataModel[config.rowColField]
+                  )
+                "
+                class="table-input"
+                [value]="dataModel[config.rowColField]"
+              />
+            </td>
+          </tr>
+        </tbody>
+        <!-- <tfoot [style.top.px]="headFixPosition">
     <tr class="dataRow">
       <td [style.left.px]="leftPos" *ngFor="let config of tableConfigs;let i= index;let first = first;">
          <span *ngIf="config.isLinkField" class="text-link" (click)="clickOnLink(config.linkURL)" style="vertical-align: middle;">{{config.headerName}}</span>
@@ -81,7 +162,7 @@
       </td>
     </tr>
   </tfoot> -->
-  </table>
+      </table>
+    </div>
   </div>
-</div>
 </section>

@@ -23,6 +23,7 @@ export class TableConfigModel {
   showOnlyIcon: boolean = false;
   isIconAvailable: boolean = false;
   iconUrl: '';
+  iconName: 'info';
   textColor: 'black';
 }
 
