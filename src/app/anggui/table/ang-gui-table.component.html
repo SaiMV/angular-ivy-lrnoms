@@ -76,6 +76,7 @@
               "
             >
               <ang-gui-icon
+                *ngIf="config.isIconAvailable || config.showOnlyIcon"
                 class="table-row-td-icon"
                 style="z-index: 100;    padding-left: 0px; display: inline-block;float: left; border-radius: 20px;"
                 [iconName]="config.iconName"
