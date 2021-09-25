@@ -15,7 +15,7 @@
   width: 100%;
   height: 390px;
   overflow: auto;
-  margin-top: 25px;
+  margin-top: 0px;
   border: 1px solid #d1cccc;
 }
 .sticky-table {

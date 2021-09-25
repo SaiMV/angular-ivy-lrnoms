@@ -1,9 +1,14 @@
 <section>
   <div class="table-top-option-container">
-    <h1
-      style="margin: 0px;align-self:center;font-size:16px;"
+    <ang-gui-icon
       (click)="taggleTableMenu()"
-    >
+      class="table-row-td-icon"
+      style="z-index: 100;    padding-left: 0px; display: inline-block;float: left; border-radius: 20px;padding-top: 16px;
+        padding-right: 13px;"
+      [iconName]="'dotted-menu'"
+      [fillColor]="'grey'"
+    ></ang-gui-icon>
+    <h1 style="margin: 0px;align-self:center;font-size:16px;">
       Fixed Table header
     </h1>
   </div>
