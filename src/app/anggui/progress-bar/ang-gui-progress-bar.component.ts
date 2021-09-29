@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AngGuiProgressBarComponent {
   @Input() type: string = 'nomal';
-  @Input() label: string = '';
-  @Input() progressPercentage: number = 90;
+  @Input() title: string = '';
+  @Input() progressPercentage: number = 100;
   constructor() {}
 }

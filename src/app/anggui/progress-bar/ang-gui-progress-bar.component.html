@@ -1,5 +1,5 @@
 <section class="progress-line">
-  <span class="progress-label">Course Completion</span>
+  <span *ngIf="title" class="progress-label">{{title}}</span>
   <div
     class="progress-line-container"
     style="background: rgb(239, 239, 239); height: 15px;"
