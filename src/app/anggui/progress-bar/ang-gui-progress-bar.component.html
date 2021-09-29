@@ -19,8 +19,9 @@
     <div class="left-block"></div>
     <div
       class="right-block"
-      style="background: rgb(239, 239, 239); transform: rotate(39.6deg);"
-    ></div>
+      [style.transform]="'rotate(' + (progressPercentage ? getCircularPercentage() : 0) + 'deg)'"
+      ></div>
+      <!-- style="transform: rotate(180.6deg);" -->
     <div class="mask"><span>11%</span></div>
   </div>
 </section>
