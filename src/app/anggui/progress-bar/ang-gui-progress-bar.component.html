@@ -1,6 +1,7 @@
 <section class="progress-line">
   <span *ngIf="title" class="progress-label">{{ title }}</span>
-  <div *ngIf="type != 'circular'"
+  <div
+    *ngIf="type != 'circular'"
     class="progress-line-container"
     [ngClass]="type"
     style="background: rgb(239, 239, 239); height: 15px;"
@@ -19,9 +20,14 @@
     <div class="left-block"></div>
     <div
       class="right-block"
-      [style.transform]="'rotate(' + (progressPercentage ? getCircularPercentage() : 0) + 'deg)'"
-      ></div>
-      <!-- style="transform: rotate(180.6deg);" -->
+      [style.background]="
+        progressPercentage > 50 ? 'inherit' : 'rgb(239, 239, 239)'
+      "
+      [style.transform]="
+        'rotate(' + (progressPercentage ? getCircularPercentage() : 0) + 'deg)'
+      "
+    ></div>
+    <!-- style="transform: rotate(180.6deg);" -->
     <div class="mask"><span>11%</span></div>
   </div>
 </section>

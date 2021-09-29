@@ -10,10 +10,9 @@ export class AngGuiProgressBarComponent {
   @Input() title: string = '';
   @Input() progressPercentage: number = 100;
   constructor() {}
-  getCircularPercentage(){
-    if(this.progressPercentage>=0 && this.progressPercentage <=50){
-
-      return this.progressPercentage*3.6;
-    }
+  getCircularPercentage() {
+    return this.progressPercentage > 0 && this.progressPercentage <= 50
+      ? this.progressPercentage * 3.6
+      : (this.progressPercentage - 50) * 3.6;
   }
 }
