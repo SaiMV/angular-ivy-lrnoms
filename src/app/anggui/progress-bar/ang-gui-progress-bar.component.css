@@ -13,7 +13,7 @@ section {
   font-family: 'Roboto', sans-serif;
 }
 .progress-line-bar {
-  background: rgba(241, 105, 27, 0.993);
+  background: #0d75a7;
   transition: width 2s ease 0s;
   text-align: center;
   padding: 0px 0px;
