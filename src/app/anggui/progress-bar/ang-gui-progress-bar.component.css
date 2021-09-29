@@ -1,15 +1,22 @@
 .progress-line-container {
   display: flex;
-  margin: 15px auto;
+  margin: 5px auto;
 }
 section {
   display: block;
+  margin: 5px 8px;
 }
-.progress-label{
-
+.progress-label {
+  margin: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'Roboto', sans-serif;
 }
-.progress-line-inner{
+.progress-line-bar {
   background: rgba(241, 105, 27, 0.993);
-   transition: width 2s ease 0s;
-   text-align:center
+  transition: width 2s ease 0s;
+  text-align: center;
+  padding: 0px 0px;
+  font-size: 12px;
+  color: white;
 }
