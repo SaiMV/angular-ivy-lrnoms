@@ -1,0 +1,15 @@
+.progress-line-container {
+  display: flex;
+  margin: 15px auto;
+}
+section {
+  display: block;
+}
+.progress-label{
+
+}
+.progress-line-inner{
+  background: rgba(241, 105, 27, 0.993);
+   transition: width 2s ease 0s;
+   text-align:center
+}
