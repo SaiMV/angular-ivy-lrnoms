@@ -20,3 +20,7 @@ section {
   font-size: 12px;
   color: white;
 }
+.progress-line-container.rouded,
+.progress-line-bar.rouded{
+  border-radius:10px;
+}

@@ -2,8 +2,9 @@
   <span *ngIf="title" class="progress-label">{{title}}</span>
   <div
     class="progress-line-container"
+    [ngClass]="type"
     style="background: rgb(239, 239, 239); height: 15px;"
   >
-    <div class="progress-line-bar" [style.width.%]="progressPercentage">{{progressPercentage}}%</div>
+    <div class="progress-line-bar" [ngClass]="type" [style.width.%]="progressPercentage">{{progressPercentage}}%</div>
   </div>
 </section>
