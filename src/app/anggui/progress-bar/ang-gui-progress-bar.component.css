@@ -30,7 +30,7 @@ section {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: yellowgreen;
+  background: #0d75a7;
   overflow: hidden;
 }
 .semi-circle {
@@ -75,12 +75,12 @@ section {
 }
 
 .mask span {
-  color: yellowgreen;
+  color: #0d75a7;;
   font-size: 20px;
   font-family: Arial;
   position: absolute;
   width: 100%;
   text-align: center;
-  top: calc(50% - 16px);
+  top: calc((100% - 23px) / 2);
   left: calc(0px);
 }
