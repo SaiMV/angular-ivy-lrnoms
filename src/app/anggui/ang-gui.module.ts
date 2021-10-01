@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AngGuiAlertComponent } from './alert/ang-gui-alert.component';
 import { CommonModule } from '@angular/common';
@@ -17,6 +17,7 @@ import { AngGuiRadioButtonComponent } from './radio-button/ang-gui-radio-button.
 import { AngGuiTableComponent } from './table/ang-gui-table.component';
 import { AngGuiProgressBarComponent } from './progress-bar/ang-gui-progress-bar.component';
 import { AngGuiAlertControllerComponent } from './ang-gui-services/alert-model-services/ang-gui-alert-controller/ang-gui-alert-controller.component';
+import { AngGuiPopupComponent } from './popup/ang-gui-popup/ang-gui-popup.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -35,6 +36,8 @@ import { AngGuiAlertControllerComponent } from './ang-gui-services/alert-model-s
     AngGuiRadioButtonComponent,
     AngGuiTableComponent,
     AngGuiProgressBarComponent,
+    AngGuiAlertControllerComponent,
+    AngGuiPopupComponent,
   ],
   exports: [
     AngGuiAlertComponent,
@@ -51,9 +54,12 @@ import { AngGuiAlertControllerComponent } from './ang-gui-services/alert-model-s
     AngGuiRadioButtonComponent,
     AngGuiTableComponent,
     AngGuiProgressBarComponent,
+    AngGuiAlertControllerComponent,
+    AngGuiPopupComponent,
   ],
   providers: [AlertMessageService],
-  entryComponents: [AngGuiAlertControllerComponent],
+  entryComponents: [AngGuiAlertControllerComponent, AngGuiPopupComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
 
 })
 export class AngGuiModule {}

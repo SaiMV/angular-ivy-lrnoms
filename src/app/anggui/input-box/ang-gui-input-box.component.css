@@ -27,3 +27,148 @@ input::placeholder {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
+
+.input-container{
+  padding: 10px 5px;
+      height:90px;
+}
+
+.input-box {
+  color: grey;
+  font-family: roboto;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  padding:8px;
+  display: inline-block;
+  outline: none;
+  /* margin:8px; */
+  height:20px;
+  min-width:100px;
+  width:100%;
+  /* border:1px solid #cccccc; */
+  /* border-radius: 4px; */
+  background-color: #FFFFFF;
+  border: 1.5px solid rgb(137, 144, 148); 
+}
+
+.input-box.no-border{
+  /* padding-left:0px; */
+  border:none; 
+  padding-left: 0px;
+  border-bottom: 1.5px solid rgb(137, 144, 148); 
+}
+
+.input-name-feild{
+  color: rgb(137, 144, 148);
+  /* color:rgb(207, 201, 201); */
+  font-family: roboto;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 3px;
+  padding: 8px 10px;
+      min-width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-box::placeholder{
+  color: grey;
+  font-family: roboto;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+
+.input-box.error{
+  /* color:red; */
+  border:2px solid red;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  /* transition: border .5s cubic-bezier(0.25, 0.1, 0.38, 0.55), border-color .5s ease; */
+}
+
+.input-box.no-border.error{
+  /* color:red; */
+  border:none;
+  border-bottom:2px solid red!important;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: 0px;
+  /* transition: border-bottom .5s cubic-bezier(0.25, 0.1, 0.38, 0.55), border-color .5s ease; */
+}
+
+.input-box.success{
+  /* color:rgb(8, 153, 8); */
+  border:2px solid rgb(8, 153, 8);
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  /* transition: border .5s cubic-bezier(0.25, 0.1, 0.38, 0.55), border-color .5s ease; */
+}
+
+.input-box.no-border.success{
+  /* color:rgb(8, 153, 8); */
+  border:none;
+  border-bottom:2px solid rgb(8, 153, 8) !important;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: 0px;
+  /* transition: border-bottom .5s cubic-bezier(0.25, 0.1, 0.38, 0.55), border-color .5s ease; */
+
+}
+
+.validation-msg-area{
+  display: none;
+  font-family: roboto;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 12px;
+  padding: 8px 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.validation-msg-area.error{
+  display: block;
+  color:red;
+  min-height:20px;
+}
+
+.validation-msg-area.success{
+  display: block;
+  color:rgb(5, 197, 5);
+  min-height:20px;
+}
+
+.validation-msg-area.success:before{
+  color:rgb(5, 197, 5);
+  /* content:url('../../../assets/icons/tick-success.ico'); */
+  position: relative;
+
+}
+
+.validation-msg-area.error:before{
+  color:red;
+  top:2px;
+  /* content:url('../../../assets/icons/error-cross.ico'); */
+  position: relative;
+
+}
+
+.inline-text{
+  display: inline-block;
+  float:left;
+  height: 30px;
+}
+
+.inline-text-input-container{
+  display: flex;
+  /* padding: 0px 5px; */
+  flex-grow: 1;
+  align-items: baseline;
+
+}
+.inline-text-input{
+  flex-grow: 1;
+}

@@ -1,0 +1,50 @@
+<div class="alert-main-container">
+  <div class="alert-container">
+    <div class="alert-header">
+      <div class="alert-text alert-header-text">
+        {{ alertControllerModelData.data.title }}
+      </div>
+      <div
+        class="alert-close"
+        (click)="closeAlert(alertControllerModelData.data.isConfirmAlert, true)"
+      ></div>
+    </div>
+    <div class="alert-content-main-area">
+      <div
+        class="alert-content-area"
+        *ngIf="!alertControllerModelData.data.isConfirmAlert"
+      >
+        {{ alertControllerModelData.data.message }}
+      </div>
+      <div
+        class="alert-content-area"
+        *ngIf="alertControllerModelData.data.isConfirmAlert"
+      >
+        <ang-gui-input-box
+          style="width:100%;"
+          [inputNameAlign]="'center'"
+          [value]="alertControllerModelData.data.inputValue"
+          (onKeyupValue)="onKeyupValue($event)"
+          [inputName]="alertControllerModelData.data.message"
+        ></ang-gui-input-box>
+      </div>
+    </div>
+    <div class="alert-footer adjust-buttons">
+      <button
+        class="button-common"
+        (click)="
+          closeAlert(alertControllerModelData.data.isConfirmAlert, false)
+        "
+      >
+        OK
+      </button>
+      <button
+        class="button-common"
+        (click)="closeAlert(alertControllerModelData.data.isConfirmAlert, true)"
+        *ngIf="alertControllerModelData.data.isConfirmAlert"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
