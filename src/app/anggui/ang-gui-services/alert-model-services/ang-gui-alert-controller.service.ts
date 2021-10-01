@@ -1,6 +1,11 @@
 import {
-  Injectable, ComponentFactoryResolver, ApplicationRef, Injector,
-  Type, EmbeddedViewRef, ComponentRef
+  Injectable,
+  ComponentFactoryResolver,
+  ApplicationRef,
+  Injector,
+  Type,
+  EmbeddedViewRef,
+  ComponentRef,
 } from '@angular/core';
 import { AngGuiModule } from '../../ang-gui.module';
 
@@ -10,43 +15,46 @@ import { AngGuiAlertControllerModelSubscriber } from './ang-gui-alert-controller
 import { AlertModel } from './ang-gui-alert-model/ang-gui-alert-model';
 import { AngGuiAlertControllerComponent } from './ang-gui-alert-controller/ang-gui-alert-controller.component';
 import { AngGuiAlertComponent } from '../../alert/ang-gui-alert.component';
+import { AngGuiPopupComponent } from '../../popup/ang-gui-popup/ang-gui-popup.component';
 
 @Injectable({
-  providedIn: AngGuiModule
+  providedIn: AngGuiModule,
 })
 export class AngGuiAlertControlerService {
   dialogComponentRef: ComponentRef<AngGuiAlertControllerComponent>;
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver, private appRef: ApplicationRef,
-    private injector: Injector) { }
+  constructor(
+    private componentFactoryResolver: ComponentFactoryResolver,
+    private appRef: ApplicationRef,
+    private injector: Injector
+  ) {}
 
   public openAlert(title, message) {
     let alertModel = new AlertModel();
     alertModel.title = title;
-    alertModel.message = message
+    alertModel.message = message;
     let dataConfig = new AngGuiAlertControllerModelData();
     dataConfig.data = alertModel;
-    return this.open(AngGuiAlertComponent, dataConfig);
+    return this.open(AngGuiPopupComponent, dataConfig);
   }
 
-
-  public openConfirmAlert(title, message,value) {
+  public openConfirmAlert(title, message, value) {
     let alertModel = new AlertModel();
-    alertModel.inputValue = value
+    alertModel.inputValue = value;
     alertModel.title = title;
-    alertModel.message = message
+    alertModel.message = message;
     alertModel.isConfirmAlert = true;
     let dataConfig = new AngGuiAlertControllerModelData();
     dataConfig.data = alertModel;
-    return this.open(AngGuiAlertComponent, dataConfig);
+    return this.open(AngGuiPopupComponent, dataConfig);
   }
 
-
-  private open(componentType: Type<any>, config: AngGuiAlertControllerModelData) {
+  private open(
+    componentType: Type<any>,
+    config: AngGuiAlertControllerModelData
+  ) {
     const dialogRef = this.appendDialogComponentToBody(config);
-
     this.dialogComponentRef.instance.childComponentType = componentType;
-
     return dialogRef;
   }
 
@@ -62,10 +70,16 @@ export class AngGuiAlertControlerService {
       sub.unsubscribe();
     });
 
-    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(AngGuiAlertControllerComponent);
-    const componentRef = componentFactory.create(new AngGuiAlertControllerModelInjector(this.injector, map));
+    const componentFactory =
+      this.componentFactoryResolver.resolveComponentFactory(
+        AngGuiAlertControllerComponent
+      );
+    const componentRef = componentFactory.create(
+      new AngGuiAlertControllerModelInjector(this.injector, map)
+    );
     this.appRef.attachView(componentRef.hostView);
-    const domElem = (componentRef.hostView as EmbeddedViewRef<any>).rootNodes[0] as HTMLElement;
+    const domElem = (componentRef.hostView as EmbeddedViewRef<any>)
+      .rootNodes[0] as HTMLElement;
     document.body.appendChild(domElem);
     this.dialogComponentRef = componentRef;
     this.dialogComponentRef.instance.onClose.subscribe(() => {
@@ -76,10 +90,9 @@ export class AngGuiAlertControlerService {
   }
 
   private removeDialogComponentFromBody() {
-
     setTimeout(() => {
       this.appRef.detachView(this.dialogComponentRef.hostView);
       this.dialogComponentRef.destroy();
-    }, 100)
+    }, 100);
   }
 }
