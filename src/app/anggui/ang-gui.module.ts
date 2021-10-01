@@ -19,6 +19,7 @@ import { AngGuiProgressBarComponent } from './progress-bar/ang-gui-progress-bar.
 import { AngGuiAlertControllerComponent } from './ang-gui-services/alert-model-services/ang-gui-alert-controller/ang-gui-alert-controller.component';
 import { AngGuiPopupComponent } from './popup/ang-gui-popup/ang-gui-popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngGuiComponentModelInsertionDirective } from './ang-gui-services/alert-model-services/ang-gui-alert-controller/ang-gui-component-insertion.directive';
 
 @NgModule({
   imports: [CommonModule, FormsModule, BrowserAnimationsModule],
@@ -39,6 +40,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AngGuiProgressBarComponent,
     AngGuiAlertControllerComponent,
     AngGuiPopupComponent,
+    AngGuiComponentModelInsertionDirective
   ],
   exports: [
     AngGuiAlertComponent,
