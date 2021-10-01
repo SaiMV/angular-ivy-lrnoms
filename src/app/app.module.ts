@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AlertMessageService } from './anggui/ang-gui-services/common-message-service/alert-message.service';
@@ -11,5 +11,7 @@ import { HowToUseAngGUI } from './pages/how-to-use-angui/how-to-use-angui.compon
   declarations: [AppComponent, HowToUseAngGUI],
   bootstrap: [AppComponent],
   providers: [AlertMessageService],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class AppModule {}
