@@ -17,7 +17,7 @@ import { AngGuiComponentModelInsertionDirective } from './ang-gui-component-inse
 @Component({
   selector: 'ang-gui-alert-controller',
   templateUrl: './ang-gui-alert-controller.component.html',
-  styleUrls: ['./ang-guialert-controller.component.css'],
+  styleUrls: ['./ang-gui-alert-controller.component.css'],
   animations: [
     trigger('zoom-alert', [
       transition('void => *', [
