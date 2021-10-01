@@ -38,7 +38,7 @@ import { AngGuiComponentModelInsertionDirective } from './ang-gui-component-inse
   ],
 })
 export class AngGuiAlertControllerComponent
-  implements AfterViewInit, OnDestroy
+  implements  OnDestroy
 {
   componentRef: ComponentRef<any>;
 
@@ -56,13 +56,13 @@ export class AngGuiAlertControllerComponent
     private dialogRef: AngGuiAlertControllerModelSubscriber
   ) {}
 
-  ngAfterViewInit() {
-    this.popupChildComponent(this.childComponentType);
-    this.changeDetector.detectChanges();
-    this.dialogRef.onClose.subscribe((data) => {
-      this.showAlert = false;
-    });
-  }
+  // ngAfterViewInit() {
+  //   this.popupChildComponent(this.childComponentType);
+  //   this.changeDetector.detectChanges();
+  //   this.dialogRef.onClose.subscribe((data) => {
+  //     this.showAlert = false;
+  //   });
+  // }
 
   popupChildComponent(componentType: Type<any>) {
     let componentFactory =

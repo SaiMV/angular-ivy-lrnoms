@@ -14,7 +14,6 @@ import { AngGuiAlertControllerModelData } from './ang-gui-alert-controller-data'
 import { AngGuiAlertControllerModelSubscriber } from './ang-gui-alert-controller-subscriber';
 import { AlertModel } from './ang-gui-alert-model/ang-gui-alert-model';
 import { AngGuiAlertControllerComponent } from './ang-gui-alert-controller/ang-gui-alert-controller.component';
-import { AngGuiAlertComponent } from '../../alert/ang-gui-alert.component';
 import { AngGuiPopupComponent } from '../../popup/ang-gui-popup/ang-gui-popup.component';
 
 @Injectable({
