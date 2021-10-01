@@ -18,9 +18,10 @@ import { AngGuiTableComponent } from './table/ang-gui-table.component';
 import { AngGuiProgressBarComponent } from './progress-bar/ang-gui-progress-bar.component';
 import { AngGuiAlertControllerComponent } from './ang-gui-services/alert-model-services/ang-gui-alert-controller/ang-gui-alert-controller.component';
 import { AngGuiPopupComponent } from './popup/ang-gui-popup/ang-gui-popup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, BrowserAnimationsModule],
   declarations: [
     AngGuiAlertComponent,
     AngGuiIconsComponent,
@@ -59,7 +60,6 @@ import { AngGuiPopupComponent } from './popup/ang-gui-popup/ang-gui-popup.compon
   ],
   providers: [AlertMessageService],
   entryComponents: [AngGuiAlertControllerComponent, AngGuiPopupComponent],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],
-
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AngGuiModule {}
