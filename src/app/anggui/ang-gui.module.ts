@@ -16,6 +16,7 @@ import { AngGuiCardContentComponent } from './cards/card-content/ang-gui-card-co
 import { AngGuiRadioButtonComponent } from './radio-button/ang-gui-radio-button.component';
 import { AngGuiTableComponent } from './table/ang-gui-table.component';
 import { AngGuiProgressBarComponent } from './progress-bar/ang-gui-progress-bar.component';
+import { AngGuiAlertControllerComponent } from './ang-gui-services/alert-model-services/ang-gui-alert-controller/ang-gui-alert-controller.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -52,5 +53,7 @@ import { AngGuiProgressBarComponent } from './progress-bar/ang-gui-progress-bar.
     AngGuiProgressBarComponent,
   ],
   providers: [AlertMessageService],
+  entryComponents: [AngGuiAlertControllerComponent],
+
 })
 export class AngGuiModule {}
