@@ -7,14 +7,8 @@ a {
 a:hover {
   color: #BA0707;
 }
-
-body {
-  background: #e5e5e5;
-  color: #374147;
-  font: 14px "Open Sans",Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1;
-  width: 100%;
+article,aside,figure,footer,header,hgroup,nav,section {
+  display: block;
 }
 
 nav {
