@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngGuiComponentModelInsertionDirective } from './ang-gui-services/alert-model-services/ang-gui-alert-controller/ang-gui-component-insertion.directive';
 import { AngGuiNavBarWithListMenuComponent } from './nav-bar-with-list-menu/ang-gui-nav-bar-with-list-menu.component';
 import { AngGuiExpanderMenuComponent } from './expander-menu/ang-gui-expander-menu.component';
+import { AngGuiLabelComponent } from './label/ang-gui-label.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, BrowserAnimationsModule],
@@ -44,7 +45,8 @@ import { AngGuiExpanderMenuComponent } from './expander-menu/ang-gui-expander-me
     AngGuiPopupComponent,
     AngGuiComponentModelInsertionDirective,
     AngGuiNavBarWithListMenuComponent,
-    AngGuiExpanderMenuComponent
+    AngGuiExpanderMenuComponent,
+    AngGuiLabelComponent
   ],
   exports: [
     AngGuiAlertComponent,
@@ -64,7 +66,8 @@ import { AngGuiExpanderMenuComponent } from './expander-menu/ang-gui-expander-me
     AngGuiAlertControllerComponent,
     AngGuiPopupComponent,
     AngGuiNavBarWithListMenuComponent,
-    AngGuiExpanderMenuComponent
+    AngGuiExpanderMenuComponent,
+    AngGuiLabelComponent
   ],
   providers: [AlertMessageService],
   entryComponents: [AngGuiAlertControllerComponent, AngGuiPopupComponent],
