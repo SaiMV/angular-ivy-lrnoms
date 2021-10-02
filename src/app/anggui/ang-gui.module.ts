@@ -23,6 +23,7 @@ import { AngGuiComponentModelInsertionDirective } from './ang-gui-services/alert
 import { AngGuiNavBarWithListMenuComponent } from './nav-bar-with-list-menu/ang-gui-nav-bar-with-list-menu.component';
 import { AngGuiExpanderMenuComponent } from './expander-menu/ang-gui-expander-menu.component';
 import { AngGuiLabelComponent } from './label/ang-gui-label.component';
+import { AngGuiVideoPlayerComponent } from './video-player/ang-gui-video-player.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, BrowserAnimationsModule],
