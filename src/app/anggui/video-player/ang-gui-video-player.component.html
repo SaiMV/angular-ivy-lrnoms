@@ -4,7 +4,8 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 </iframe>
 </div>
 
-<div class="video-player-youtube-container"  *ngIf = "type != 'YouTube'"  [style.height.px]= "height">
+<div class="video-player-youtube-container"  *ngIf = "type != 'YouTube'"  [style.width.px]= "width"
+[style.maxWidth.px]= "width" [style.maxHeight.px]= "height" [style.height.px]= "height">
 <video controls>
   <source [src]="getUrl()"  type="video/webm">
     <source [src]="getUrl()" type="video/ogg">

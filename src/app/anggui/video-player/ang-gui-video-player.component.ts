@@ -9,6 +9,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class AngGuiVideoPlayerComponent implements OnInit {
   @Input() url: string = '';
   @Input() height: string = '';
+  @Input() width: string = '';
   @Input() type = 'YouTube';
   bypassedUrl: SafeResourceUrl;
 
