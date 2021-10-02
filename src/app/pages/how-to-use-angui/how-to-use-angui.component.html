@@ -72,59 +72,63 @@ position: relative;"
   <ang-gui-button (click)="openConfirmAlert()"
     >Open Confirm Alert</ang-gui-button
   >
-</div>
+  <angui-you-tube-video-player [height] = "'500'" [url]="'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'"></angui-you-tube-video-player>
 
-<ang-gui-nav-bar-with-list-menu></ang-gui-nav-bar-with-list-menu>
+<angui-you-tube-video-player [height] = "'500'" [type]= "'YouTube'" [url]="'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'"></angui-you-tube-video-player>
 
-<ang-gui-expander-menu></ang-gui-expander-menu>
-<ang-gui-label [text]="'Application Of Card'"></ang-gui-label>
-<ang-gui-label
-  [likeLink]="true"
-  [text]="'I Hope You Like It'"
-  [hover]="true"
-></ang-gui-label>
+<angui-you-tube-video-player [height] = "'500'" [type]="any" [url]="'https://www.youtube.com/watch?v=x8yymm3DtVA'"></angui-you-tube-video-player>
 
-<ang-gui-label
-  [text]="'Home Screen'"
-  [mainHeader]="true"
-  [texColor]="'rgb(57, 60, 64)'"
-></ang-gui-label>
-<ang-gui-label
-  [text]="'Home Screen'"
-  [subHeader]="true"
-  [texColor]="'rgb(57, 60, 64)'"
-></ang-gui-label>
+  <ang-gui-nav-bar-with-list-menu></ang-gui-nav-bar-with-list-menu>
+  
+  <ang-gui-expander-menu></ang-gui-expander-menu>
+  <ang-gui-label [text]="'Application Of Card'"></ang-gui-label>
+  <ang-gui-label
+    [likeLink]="true"
+    [text]="'I Hope You Like It'"
+    [hover]="true"
+  ></ang-gui-label>
+  
+  <ang-gui-label
+    [text]="'Home Screen'"
+    [mainHeader]="true"
+    [texColor]="'rgb(57, 60, 64)'"
+  ></ang-gui-label>
+  <ang-gui-label
+    [text]="'Home Screen'"
+    [subHeader]="true"
+    [texColor]="'rgb(57, 60, 64)'"
+  ></ang-gui-label>
+  
+  <ang-gui-label [text]="'Edit'" [hover]="true"></ang-gui-label>
+  <ang-gui-label [text]="'Create'" [hover]="true"></ang-gui-label>
+  <ang-gui-label [text]="'Delete'"> </ang-gui-label>
+  <angui-horizondal-line></angui-horizondal-line>
+  
+  <ang-gui-label [text]="'Refresh'" [refreshLink]="true"></ang-gui-label>
+  <ang-gui-label
+    [text]="'Previous Page'"
+    [previousButtonLink]="true"
+  ></ang-gui-label>
+  <ang-gui-label [text]="'Next Page'" [nextButtonLink]="true"></ang-gui-label>
+  <ang-gui-label [text]="'Add'" [addButtonLink]="true"></ang-gui-label>
+  <ang-gui-label [text]="'Delete'" [deleteButtonLink]="true"></ang-gui-label>
+  <ang-gui-label
+    [text]="'Open Page'"
+    [disabled]="true"
+    [openPageButtonLink]="true"
+  ></ang-gui-label>
+  <ang-gui-label [text]="'Open Floder'" [folderButtonLink]="true"></ang-gui-label>
+  <ang-gui-label [text]="'Open Galary'" [galaryButtonLink]="true"></ang-gui-label>
+  <ang-gui-label
+    [text]="'Navigate To Home'"
+    [homeButtonLink]="true"
+  ></ang-gui-label>
+  <ang-gui-label
+    [text]="'Download File'"
+    [downloadButtonLink]="true"
+  ></ang-gui-label>
+  <ang-gui-label [text]="'Upload File'" [uploadButtonLink]="true"></ang-gui-label>
+  <ang-gui-label [text]="'Open Pages'" [pagesButtonLink]="true"></ang-gui-label>
+  <ang-gui-label [text]="'List Item'" [listLink]="true"></ang-gui-label>
 
-<ang-gui-label [text]="'Edit'" [hover]="true"></ang-gui-label>
-<ang-gui-label [text]="'Create'" [hover]="true"></ang-gui-label>
-<ang-gui-label [text]="'Delete'"> </ang-gui-label>
-<angui-horizondal-line></angui-horizondal-line>
-
-<ang-gui-label [text]="'Refresh'" [refreshLink]="true"></ang-gui-label>
-<ang-gui-label
-  [text]="'Previous Page'"
-  [previousButtonLink]="true"
-></ang-gui-label>
-<ang-gui-label [text]="'Next Page'" [nextButtonLink]="true"></ang-gui-label>
-<ang-gui-label [text]="'Add'" [addButtonLink]="true"></ang-gui-label>
-<ang-gui-label [text]="'Delete'" [deleteButtonLink]="true"></ang-gui-label>
-<ang-gui-label
-  [text]="'Open Page'"
-  [disabled]="true"
-  [openPageButtonLink]="true"
-></ang-gui-label>
-<ang-gui-label [text]="'Open Floder'" [folderButtonLink]="true"></ang-gui-label>
-<ang-gui-label [text]="'Open Galary'" [galaryButtonLink]="true"></ang-gui-label>
-<ang-gui-label
-  [text]="'Navigate To Home'"
-  [homeButtonLink]="true"
-></ang-gui-label>
-<ang-gui-label
-  [text]="'Download File'"
-  [downloadButtonLink]="true"
-></ang-gui-label>
-<ang-gui-label [text]="'Upload File'" [uploadButtonLink]="true"></ang-gui-label>
-<ang-gui-label [text]="'Open Pages'" [pagesButtonLink]="true"></ang-gui-label>
-<ang-gui-label [text]="'List Item'" [listLink]="true"></ang-gui-label>
-
-<ang-gui-video-player></ang-gui-video-player>
+</div>  
