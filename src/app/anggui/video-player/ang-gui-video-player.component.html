@@ -1,0 +1,20 @@
+<div class="video-player-youtube-container" [style.height.px]= "height"  *ngIf = "type == 'YouTube'">
+<iframe  [src]="getUrl()"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+
+<div class="video-player-youtube-container"  *ngIf = "type != 'YouTube'"  [style.height.px]= "height">
+<video controls>
+  <source [src]="getUrl()"  type="video/webm">
+    <source [src]="getUrl()" type="video/ogg">
+      
+      <div >
+        Your browser doesn't support the video format!
+      </div>
+    </video>    
+</div>
+
+
+
+

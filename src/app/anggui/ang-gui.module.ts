@@ -46,7 +46,8 @@ import { AngGuiLabelComponent } from './label/ang-gui-label.component';
     AngGuiComponentModelInsertionDirective,
     AngGuiNavBarWithListMenuComponent,
     AngGuiExpanderMenuComponent,
-    AngGuiLabelComponent
+    AngGuiLabelComponent,
+    AngGuiVideoPlayerComponent,
   ],
   exports: [
     AngGuiAlertComponent,
@@ -67,7 +68,8 @@ import { AngGuiLabelComponent } from './label/ang-gui-label.component';
     AngGuiPopupComponent,
     AngGuiNavBarWithListMenuComponent,
     AngGuiExpanderMenuComponent,
-    AngGuiLabelComponent
+    AngGuiLabelComponent,
+    AngGuiVideoPlayerComponent,
   ],
   providers: [AlertMessageService],
   entryComponents: [AngGuiAlertControllerComponent, AngGuiPopupComponent],
