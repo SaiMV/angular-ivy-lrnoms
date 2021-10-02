@@ -21,13 +21,15 @@
     <div
       class="right-block"
       [style.background]="
-        progressPercentage > 50 ? 'inherit' : '#2a5587'
+        progressPercentage > 50 ? 'inherit' : 'rgb(239, 239, 239)'
       "
       [style.transform]="
         'rotate(' + (progressPercentage ? getCircularPercentage() : 0) + 'deg)'
       "
     ></div>
     <!-- style="transform: rotate(180.6deg);" -->
-    <div class="mask"><span>{{progressPercentage}}%</span></div>
+    <div class="mask">
+      <span>{{ progressPercentage }}%</span>
+    </div>
   </div>
 </section>
