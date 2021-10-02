@@ -1,16 +1,35 @@
-<input type="text" [ngClass]="type" [placeholder]="placeHolder" />
+<input type="text" *ngIf="!inputName" [ngClass]="type" [placeholder]="placeHolder" />
 
-<div  [ngClass] = "inlineInputName?'inline-text-input-container':'input-container'">
-<div [style.min-width.px] = "inputNameFeildWidth" [style.text-align] = "inputNameAlign"
- [ngClass] = "inlineInputName?'input-name-feild inline-text':'input-name-feild'" >
-  {{inputName}}
-</div>
-<div [ngClass] = "inlineInputName?'inline-text inline-text-input':''"  style="display: flex;
+<div
+  *ngIf="inputName"
+  [ngClass]="
+    inlineInputName ? 'inline-text-input-container' : 'input-container'
+  "
+>
+  <div
+    [style.min-width.px]="inputNameFeildWidth"
+    [style.text-align]="inputNameAlign"
+    [ngClass]="
+      inlineInputName ? 'input-name-feild inline-text' : 'input-name-feild'
+    "
+  >
+    {{ inputName }}
+  </div>
+  <div
+    [ngClass]="inlineInputName ? 'inline-text inline-text-input' : ''"
+    style="display: flex;
 flex-wrap: wrap;
-flex-grow: 1;margin: 0px 10px;">
-    <input [ngClass] = "getClassName()" [value]="value" [(ngModel)] = "value" (keyup)="onKeyup($event)" [placeholder] = "placeholder" />
-    <div [ngClass] = "getValidationClassName()">
-      {{validationMessage}}
+flex-grow: 1;margin: 0px;"
+  >
+    <input
+      [ngClass]="getClassName()"
+      [value]="value"
+      [(ngModel)]="value"
+      (keyup)="onKeyup($event)"
+      [placeholder]="placeholder"
+    />
+    <div [ngClass]="getValidationClassName()">
+      {{ validationMessage }}
     </div>
-</div>
+  </div>
 </div>

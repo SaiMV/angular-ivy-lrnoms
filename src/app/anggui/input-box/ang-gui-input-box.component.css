@@ -44,7 +44,8 @@ input::placeholder {
   display: inline-block;
   outline: none;
   /* margin:8px; */
-  height:20px;
+  height:45px;
+  max-height: 45px;
   min-width:100px;
   width:100%;
   /* border:1px solid #cccccc; */
@@ -67,7 +68,7 @@ input::placeholder {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 3px;
-  padding: 8px 10px;
+  padding: 8px 5px;
       min-width: 100px;
   display: flex;
   flex-wrap: wrap;
