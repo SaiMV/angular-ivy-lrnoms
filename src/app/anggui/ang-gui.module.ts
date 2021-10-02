@@ -20,6 +20,7 @@ import { AngGuiAlertControllerComponent } from './ang-gui-services/alert-model-s
 import { AngGuiPopupComponent } from './popup/ang-gui-popup/ang-gui-popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngGuiComponentModelInsertionDirective } from './ang-gui-services/alert-model-services/ang-gui-alert-controller/ang-gui-component-insertion.directive';
+import { AngGuiNavBarWithListMenuComponent } from './nav-bar-with-list-menu/ang-gui-nav-bar-with-list-menu.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, BrowserAnimationsModule],
@@ -40,7 +41,8 @@ import { AngGuiComponentModelInsertionDirective } from './ang-gui-services/alert
     AngGuiProgressBarComponent,
     AngGuiAlertControllerComponent,
     AngGuiPopupComponent,
-    AngGuiComponentModelInsertionDirective
+    AngGuiComponentModelInsertionDirective,
+    AngGuiNavBarWithListMenuComponent
   ],
   exports: [
     AngGuiAlertComponent,
@@ -59,6 +61,7 @@ import { AngGuiComponentModelInsertionDirective } from './ang-gui-services/alert
     AngGuiProgressBarComponent,
     AngGuiAlertControllerComponent,
     AngGuiPopupComponent,
+    AngGuiNavBarWithListMenuComponent
   ],
   providers: [AlertMessageService],
   entryComponents: [AngGuiAlertControllerComponent, AngGuiPopupComponent],
