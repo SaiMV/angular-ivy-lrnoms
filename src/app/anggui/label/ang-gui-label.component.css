@@ -1,18 +1,4 @@
-*{
-  -webkit-tap-highlight-color: none;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome and Opera */
-  -webkit-tap-highlight-color: transparent;
-  -ms-tap-highlight-color: transparent;
-  -khtml-tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
 
-}
 
 .link-text {
   color: rgb(7, 168, 248);
