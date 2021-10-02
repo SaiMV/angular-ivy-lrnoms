@@ -26,7 +26,7 @@ flex-grow: 1;margin: 0px;"
       [value]="value"
       [(ngModel)]="value"
       (keyup)="onKeyup($event)"
-      [placeholder]="placeholder"
+      [placeholder]="placeHolder" 
     />
     <div [ngClass]="getValidationClassName()">
       {{ validationMessage }}
