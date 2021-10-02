@@ -1,18 +1,3 @@
-* {
-  -webkit-tap-highlight-color: none;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome and Opera */
-  -webkit-tap-highlight-color: transparent;
-  -ms-tap-highlight-color: transparent;
-  -khtml-tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
-}
-
 .alert-main-container {
   height: 100%;
   width: 100%;
@@ -42,7 +27,7 @@
 .alert-header {
   height: 40px;
   width: 100%;
-  background-color: rgb(7, 168, 248);
+  background-color: rgb(13 44 74);
 }
 
 .alert-header.bordered {
@@ -55,7 +40,7 @@
   height: 40px;
   width: 100%;
   bottom: 0px;
-  background-color: rgb(7, 168, 248);
+  background-color: rgb(13 44 74);
 }
 
 .alert-footer.bordered {
@@ -141,7 +126,7 @@
   margin: 0px 5px;
   z-index: 10;
   color: white;
-  background: rgba(220, 210, 210, 0.6);
+  background: rgb(5 29 50);
 }
 .alert-footer.adjust-buttons {
   display: flex;
@@ -151,7 +136,7 @@
 .alert-footer.adjust-buttons .button-common:active {
   opacity: 0.5;
   color: white;
-  background: rgba(233, 149, 149, 0.3);
+  background: rgb(5 29 50);
 }
 
 /* media query for mobile devices */

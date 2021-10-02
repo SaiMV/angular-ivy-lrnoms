@@ -11,6 +11,11 @@
   line-height: 14px;
   font-family: 'Roboto', sans-serif;
 }
+button:active {
+  opacity: 0.5;
+  color: black;
+  background: rgb(237 237 237 / 82%);
+}
 .rounded-corner {
   border-radius: 5px;
 }
