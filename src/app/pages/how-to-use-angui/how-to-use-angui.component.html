@@ -5,39 +5,7 @@ max-height: 100vh;
 overflow: scroll;
 position: relative;"
 >
-  <!-- <ang-gui-button type="success rounded-corner" (click)="showSuccessMessage()">
-    Success message
-  </ang-gui-button>
-  <ang-gui-button type="error rounded" (click)="showErrorMessage()"
-    >Error message</ang-gui-button
-  >
-  <ang-gui-button type="warning" (click)="showWarningMessage()">
-    Warning message
-  </ang-gui-button>
-  <ang-gui-alert
-    style="margin:5px;display:block"
-    alertMessage="This is a normal message"
-    [showAlertMessage]="true"
-  ></ang-gui-alert>
-  <ang-gui-drop-down></ang-gui-drop-down>
-
-  <ang-gui-input-box
-    type="normal under-lined"
-    placeHolder="Name"
-  ></ang-gui-input-box>
-  <ang-gui-input-box
-    type="normal under-lined"
-    placeHolder="Password"
-  ></ang-gui-input-box>
-  <ang-gui-input-box type="borderd" placeHolder="Age"></ang-gui-input-box>
-
-  <ang-gui-input-box
-    type="borderd"
-    inputName="Input header"
-    placeHolder="Age"
-  ></ang-gui-input-box>
-  <ang-gui-check-box text="Remeber me"></ang-gui-check-box>
-  <ang-gui--radio-button></ang-gui--radio-button>
+  <!-- 
   <ang-gui-card>
     <ang-gui-card-header>
       <h5>Application Of Card</h5>
@@ -54,111 +22,183 @@ position: relative;"
 
   <!-- <ang-gui-table></ang-gui-table> -->
 
-  <!--<ang-gui-progress-bar
-    title="Normal progress with title"
-    [progressPercentage]="90"
-  ></ang-gui-progress-bar>
-  <ang-gui-progress-bar
-    type="rouded"
-    title="Rounded corner progress with title"
-    [progressPercentage]="90"
-  ></ang-gui-progress-bar>
-  <ang-gui-progress-bar
-    type="circular"
-    title="Circular progress with title"
-    [progressPercentage]="40"
-  ></ang-gui-progress-bar>
-  <ang-gui-button (click)="openAlert()">Show Alert</ang-gui-button>
-  <ang-gui-button (click)="openConfirmAlert()"
-    >Open Confirm Alert</ang-gui-button
-  >
-  <ang-gui-video-player
-    [wdith]="'300'"
-    [height]="'200'"
-    [url]="
-      'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'
-    "
-  ></ang-gui-video-player>
-
-  <ang-gui-video-player
-    [[wdith]="'300'"
-    [height]="'200'"
-    [type]="'YouTube'"
-    [url]="
-      'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'
-    "
-  ></ang-gui-video-player>
-
-  <ang-gui-video-player
-    [wdith]="'300'"
-    [height]="'200'"
-    [type]="'any'"
-    [url]="'https://www.youtube.com/watch?v=x8yymm3DtVA'"
-  ></ang-gui-video-player>
-
-  <ang-gui-nav-bar-with-list-menu></ang-gui-nav-bar-with-list-menu>
+  <!--
 
   <ang-gui-expander-menu></ang-gui-expander-menu>
-  <ang-gui-label [text]="'Application Of Card'"></ang-gui-label>
-  <ang-gui-label
-    [likeLink]="true"
-    [text]="'I Hope You Like It'"
-    [hover]="true"
-  ></ang-gui-label>
-
-  <ang-gui-label
-    [text]="'Home Screen'"
-    [mainHeader]="true"
-    [texColor]="'rgb(57, 60, 64)'"
-  ></ang-gui-label>
-  <ang-gui-label
-    [text]="'Home Screen'"
-    [subHeader]="true"
-    [texColor]="'rgb(57, 60, 64)'"
-  ></ang-gui-label>
-
-  <ang-gui-label [text]="'Edit'" [hover]="true"></ang-gui-label>
-  <ang-gui-label [text]="'Create'" [hover]="true"></ang-gui-label>
-  <ang-gui-label [text]="'Delete'"> </ang-gui-label>
-  <angui-horizondal-line></angui-horizondal-line>
-
-  <ang-gui-label [text]="'Refresh'" [refreshLink]="true"></ang-gui-label>
-  <ang-gui-label
-    [text]="'Previous Page'"
-    [previousButtonLink]="true"
-  ></ang-gui-label>
-  <ang-gui-label [text]="'Next Page'" [nextButtonLink]="true"></ang-gui-label>
-  <ang-gui-label [text]="'Add'" [addButtonLink]="true"></ang-gui-label>
-  <ang-gui-label [text]="'Delete'" [deleteButtonLink]="true"></ang-gui-label>
-  <ang-gui-label
-    [text]="'Open Page'"
-    [disabled]="true"
-    [openPageButtonLink]="true"
-  ></ang-gui-label>
-  <ang-gui-label
-    [text]="'Open Floder'"
-    [folderButtonLink]="true"
-  ></ang-gui-label>
-  <ang-gui-label
-    [text]="'Open Galary'"
-    [galaryButtonLink]="true"
-  ></ang-gui-label>
-  <ang-gui-label
-    [text]="'Navigate To Home'"
-    [homeButtonLink]="true"
-  ></ang-gui-label>
-  <ang-gui-label
-    [text]="'Download File'"
-    [downloadButtonLink]="true"
-  ></ang-gui-label>
-  <ang-gui-label
-    [text]="'Upload File'"
-    [uploadButtonLink]="true"
-  ></ang-gui-label>
-  <ang-gui-label [text]="'Open Pages'" [pagesButtonLink]="true"></ang-gui-label>
-  <ang-gui-label [text]="'List Item'" [listLink]="true"></ang-gui-label> -->
+ -->
   <ang-gui-tabs>
-    <ang-gui-tab [tabTitle]="'Tab 1'"> Tab 1 content </ang-gui-tab>
-    <ang-gui-tab tabTitle="Tab 2"> Tab 2 content </ang-gui-tab>
+    <ang-gui-tab [tabTitle]="'Buttons'">
+      <ang-gui-button
+        type="success rounded-corner"
+        (click)="showSuccessMessage()"
+      >
+        Success message
+      </ang-gui-button>
+      <ang-gui-button type="error rounded" (click)="showErrorMessage()"
+        >Error message</ang-gui-button
+      >
+      <ang-gui-button type="warning" (click)="showWarningMessage()">
+        Warning message
+      </ang-gui-button>
+      <ang-gui-alert
+        style="margin:5px;display:block"
+        alertMessage="This is a normal message"
+        [showAlertMessage]="true"
+      ></ang-gui-alert>
+      <ang-gui-drop-down></ang-gui-drop-down>
+
+      <ang-gui-input-box
+        type="normal under-lined"
+        placeHolder="Name"
+      ></ang-gui-input-box>
+      <ang-gui-input-box
+        type="normal under-lined"
+        placeHolder="Password"
+      ></ang-gui-input-box>
+      <ang-gui-input-box type="borderd" placeHolder="Age"></ang-gui-input-box>
+
+      <ang-gui-input-box
+        type="borderd"
+        inputName="Input header"
+        placeHolder="Age"
+      ></ang-gui-input-box>
+      <ang-gui-check-box text="Remeber me"></ang-gui-check-box>
+      <ang-gui--radio-button></ang-gui--radio-button
+    ></ang-gui-tab>
+    <ang-gui-tab tabTitle="Table">
+      <ang-gui-table></ang-gui-table>
+    </ang-gui-tab>
+    <ang-gui-tab tabTitle="Progressbars">
+      <ang-gui-progress-bar
+        title="Normal progress with title"
+        [progressPercentage]="90"
+      ></ang-gui-progress-bar>
+      <ang-gui-progress-bar
+        type="rouded"
+        title="Rounded corner progress with title"
+        [progressPercentage]="90"
+      ></ang-gui-progress-bar>
+      <ang-gui-progress-bar
+        type="circular"
+        title="Circular progress with title"
+        [progressPercentage]="40"
+      ></ang-gui-progress-bar>
+      <ang-gui-button (click)="openAlert()">Show Alert</ang-gui-button>
+      <ang-gui-button (click)="openConfirmAlert()"
+        >Open Confirm Alert</ang-gui-button
+      >
+      <ang-gui-video-player
+        [wdith]="'300'"
+        [height]="'200'"
+        [url]="
+          'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'
+        "
+      ></ang-gui-video-player>
+
+      <ang-gui-video-player
+        [[wdith]="'300'"
+        [height]="'200'"
+        [type]="'YouTube'"
+        [url]="
+          'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'
+        "
+      ></ang-gui-video-player>
+
+      <ang-gui-video-player
+        [wdith]="'300'"
+        [height]="'200'"
+        [type]="'any'"
+        [url]="'https://www.youtube.com/watch?v=x8yymm3DtVA'"
+      ></ang-gui-video-player>
+
+      <ang-gui-nav-bar-with-list-menu></ang-gui-nav-bar-with-list-menu
+    ></ang-gui-tab>
+
+    <ang-gui-tab tabTitle="Iconized labels">
+      <ang-gui-label [text]="'Application Of Card'"></ang-gui-label>
+      <ang-gui-label
+        [likeLink]="true"
+        [text]="'I Hope You Like It'"
+        [hover]="true"
+      ></ang-gui-label>
+
+      <ang-gui-label
+        [text]="'Home Screen'"
+        [mainHeader]="true"
+        [texColor]="'rgb(57, 60, 64)'"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Home Screen'"
+        [subHeader]="true"
+        [texColor]="'rgb(57, 60, 64)'"
+      ></ang-gui-label>
+
+      <ang-gui-label [text]="'Edit'" [hover]="true"></ang-gui-label>
+      <ang-gui-label [text]="'Create'" [hover]="true"></ang-gui-label>
+      <ang-gui-label [text]="'Delete'"> </ang-gui-label>
+
+      <ang-gui-label [text]="'Refresh'" [refreshLink]="true"></ang-gui-label>
+      <ang-gui-label
+        [text]="'Previous Page'"
+        [previousButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Next Page'"
+        [nextButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label [text]="'Add'" [addButtonLink]="true"></ang-gui-label>
+      <ang-gui-label
+        [text]="'Delete'"
+        [deleteButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Open Page'"
+        [disabled]="true"
+        [openPageButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Open Floder'"
+        [folderButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Open Galary'"
+        [galaryButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Navigate To Home'"
+        [homeButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Download File'"
+        [downloadButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Upload File'"
+        [uploadButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label
+        [text]="'Open Pages'"
+        [pagesButtonLink]="true"
+      ></ang-gui-label>
+      <ang-gui-label [text]="'List Item'" [listLink]="true"></ang-gui-label>
+    </ang-gui-tab>
+    <ang-gui-tab tabTitle="Menus">
+      <ang-gui-table></ang-gui-table>
+    </ang-gui-tab>
+    <ang-gui-tab tabTitle="Cards">
+    <ang-gui-card>
+    <ang-gui-card-header>
+      <h5>Application Of Card</h5>
+    </ang-gui-card-header>
+    <ang-gui-card-content>
+      AngGui card is common place holder to display some beautiful content with
+      Header Name , descriptive area that is the content area, and footer which
+      can contain some actions items also.
+    </ang-gui-card-content>
+    <ang-gui-card-footer>
+      <h6>You can put anything in the footer section</h6>
+    </ang-gui-card-footer>
+  </ang-gui-card>
+  </ang-gui-tab>
   </ang-gui-tabs>
 </div>
