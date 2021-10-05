@@ -72,14 +72,32 @@ position: relative;"
   <ang-gui-button (click)="openConfirmAlert()"
     >Open Confirm Alert</ang-gui-button
   >
-  <ang-gui-video-player [wdith] = "'300'" [height] = "'200'"  [url]="'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'"></ang-gui-video-player>
+  <ang-gui-video-player
+    [wdith]="'300'"
+    [height]="'200'"
+    [url]="
+      'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'
+    "
+  ></ang-gui-video-player>
 
-<ang-gui-video-player [[wdith] = "'300'" [height] = "'200'" [type]= "'YouTube'" [url]="'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'"></ang-gui-video-player>
+  <ang-gui-video-player
+    [[wdith]="'300'"
+    [height]="'200'"
+    [type]="'YouTube'"
+    [url]="
+      'https://www.youtube.com/watch?v=uT3SBzmDxGk&list=RDXj3gU3jACe8&index=3'
+    "
+  ></ang-gui-video-player>
 
-<ang-gui-video-player [wdith] = "'300'" [height] = "'200'" [type]="'any'" [url]="'https://www.youtube.com/watch?v=x8yymm3DtVA'"></ang-gui-video-player>
+  <ang-gui-video-player
+    [wdith]="'300'"
+    [height]="'200'"
+    [type]="'any'"
+    [url]="'https://www.youtube.com/watch?v=x8yymm3DtVA'"
+  ></ang-gui-video-player>
 
   <ang-gui-nav-bar-with-list-menu></ang-gui-nav-bar-with-list-menu>
-  
+
   <ang-gui-expander-menu></ang-gui-expander-menu>
   <ang-gui-label [text]="'Application Of Card'"></ang-gui-label>
   <ang-gui-label
@@ -87,7 +105,7 @@ position: relative;"
     [text]="'I Hope You Like It'"
     [hover]="true"
   ></ang-gui-label>
-  
+
   <ang-gui-label
     [text]="'Home Screen'"
     [mainHeader]="true"
@@ -98,12 +116,12 @@ position: relative;"
     [subHeader]="true"
     [texColor]="'rgb(57, 60, 64)'"
   ></ang-gui-label>
-  
+
   <ang-gui-label [text]="'Edit'" [hover]="true"></ang-gui-label>
   <ang-gui-label [text]="'Create'" [hover]="true"></ang-gui-label>
   <ang-gui-label [text]="'Delete'"> </ang-gui-label>
   <angui-horizondal-line></angui-horizondal-line>
-  
+
   <ang-gui-label [text]="'Refresh'" [refreshLink]="true"></ang-gui-label>
   <ang-gui-label
     [text]="'Previous Page'"
@@ -117,8 +135,14 @@ position: relative;"
     [disabled]="true"
     [openPageButtonLink]="true"
   ></ang-gui-label>
-  <ang-gui-label [text]="'Open Floder'" [folderButtonLink]="true"></ang-gui-label>
-  <ang-gui-label [text]="'Open Galary'" [galaryButtonLink]="true"></ang-gui-label>
+  <ang-gui-label
+    [text]="'Open Floder'"
+    [folderButtonLink]="true"
+  ></ang-gui-label>
+  <ang-gui-label
+    [text]="'Open Galary'"
+    [galaryButtonLink]="true"
+  ></ang-gui-label>
   <ang-gui-label
     [text]="'Navigate To Home'"
     [homeButtonLink]="true"
@@ -127,8 +151,14 @@ position: relative;"
     [text]="'Download File'"
     [downloadButtonLink]="true"
   ></ang-gui-label>
-  <ang-gui-label [text]="'Upload File'" [uploadButtonLink]="true"></ang-gui-label>
+  <ang-gui-label
+    [text]="'Upload File'"
+    [uploadButtonLink]="true"
+  ></ang-gui-label>
   <ang-gui-label [text]="'Open Pages'" [pagesButtonLink]="true"></ang-gui-label>
   <ang-gui-label [text]="'List Item'" [listLink]="true"></ang-gui-label>
-
-</div>  
+  <ang-gui-tabs>
+    <ang-gui-tab [tabTitle]="'Tab 1'"> Tab 1 content </ang-gui-tab>
+    <ang-gui-tab tabTitle="Tab 2"> Tab 2 content </ang-gui-tab>
+  </ang-gui-tabs>
+</div>
