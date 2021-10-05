@@ -13,6 +13,7 @@ import { AngGuiTabComponent } from '../ang-gui-tab/ang-gui-tab.component';
   styleUrls: ['./ang-gui-tabs.component.css'],
 })
 export class AngGuiTabsComponent implements AfterContentInit {
+  @Input() pageNavBottom:boolean = false;
   @Input() type: string = 'nomal';
   tabs: AngGuiTabComponent[] = [];
   constructor() {}
@@ -43,4 +44,23 @@ export class AngGuiTabsComponent implements AfterContentInit {
     // activate the tab the user has clicked on.
     tab.active = true;
   }
+
+  getClassName(i) {
+
+    return this.tabsList[i].active ? "tab-options active" : "tab-options";
+
+  }
+
+  getContainerClassName(pageNavBottom){
+
+    return pageNavBottom ? "tab-option-contianer" : "tab-option-contianer  bottom-tab";
+
+  }
+
+  getTabsContainerClassName(pageNavBottom){
+
+    return pageNavBottom ? "tabs-container" : "tabs-container bottom-tab";
+
+  }
+
 }
