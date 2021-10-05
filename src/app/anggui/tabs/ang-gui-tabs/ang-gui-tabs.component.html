@@ -1,6 +1,7 @@
-<ul class="nav nav-tabs">
+<ul [ngClass]="getContainerClassName(pageNavBottom)">
   <li
-    *ngFor="let tab of tabs"
+    class="tab-options"
+    *ngFor="let tab of tabs; let i = index"
     (click)="selectTab(tab)"
     [class.active]="tab.active"
   >
@@ -9,12 +10,13 @@
 </ul>
 <ng-content></ng-content>
 <!-- *ngIf="pageNavBottom" -->
-<div [ngClass]="getContainerClassName(pageNavBottom)">
+<!-- <div [ngClass]="getContainerClassName(pageNavBottom)">
   <div
     [ngClass]="getClassName(i)"
+    [class.active]="tab.active"
     (click)="selectTab(tab)"
     *ngFor="let tab of tabs; let i = index"
   >
     {{ tab.title }}
   </div>
-</div>
+</div> -->

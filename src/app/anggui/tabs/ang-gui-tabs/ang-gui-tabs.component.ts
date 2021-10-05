@@ -45,12 +45,6 @@ export class AngGuiTabsComponent implements AfterContentInit {
     tab.active = true;
   }
 
-  getClassName(i) {
-
-    return this.tabsList[i].active ? "tab-options active" : "tab-options";
-
-  }
-
   getContainerClassName(pageNavBottom){
 
     return pageNavBottom ? "tab-option-contianer" : "tab-option-contianer  bottom-tab";
