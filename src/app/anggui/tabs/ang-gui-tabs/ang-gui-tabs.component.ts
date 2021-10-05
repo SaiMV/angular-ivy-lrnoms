@@ -26,22 +26,15 @@ export class AngGuiTabsComponent implements AfterContentInit {
   }
   @ContentChildren(AngGuiTabComponent) tabsList: QueryList<AngGuiTabComponent>;
 
-  // contentChildren are set
   ngAfterContentInit() {
-    // get all active tabs
     let activeTabs = this.tabsList.filter((tab) => tab.active);
-
-    // if there is no active tab set, activate the first
     if (activeTabs.length === 0) {
       this.selectTab(this.tabsList.first);
     }
   }
 
   selectTab(tab: AngGuiTabComponent) {
-    // deactivate all tabs
     this.tabsList.toArray().forEach((tab) => (tab.active = false));
-
-    // activate the tab the user has clicked on.
     tab.active = true;
   }
 
