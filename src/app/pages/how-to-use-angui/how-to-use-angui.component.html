@@ -83,10 +83,14 @@ position: relative;"
         title="Circular progress with title"
         [progressPercentage]="40"
       ></ang-gui-progress-bar>
+    </ang-gui-tab>
+    <ang-gui-tab tabTitle="Popups">
       <ang-gui-button (click)="openAlert()">Show Alert</ang-gui-button>
       <ang-gui-button (click)="openConfirmAlert()"
         >Open Confirm Alert</ang-gui-button
       >
+    </ang-gui-tab>
+    <ang-gui-tab tabTitle="Video Players">
       <ang-gui-video-player
         [wdith]="'300'"
         [height]="'200'"
@@ -114,7 +118,7 @@ position: relative;"
       <ang-gui-nav-bar-with-list-menu></ang-gui-nav-bar-with-list-menu
     ></ang-gui-tab>
 
-    <ang-gui-tab tabTitle="Iconized labels">
+    <!-- <ang-gui-tab tabTitle="Iconized labels">
       <ang-gui-label [text]="'Application Of Card'"></ang-gui-label>
       <ang-gui-label
         [likeLink]="true"
@@ -199,6 +203,6 @@ position: relative;"
       <h6>You can put anything in the footer section</h6>
     </ang-gui-card-footer>
   </ang-gui-card>
-  </ang-gui-tab>
+  </ang-gui-tab> -->
   </ang-gui-tabs>
 </div>
