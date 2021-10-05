@@ -49,6 +49,8 @@ import { AngGuiVideoPlayerComponent } from './video-player/ang-gui-video-player.
     AngGuiExpanderMenuComponent,
     AngGuiLabelComponent,
     AngGuiVideoPlayerComponent,
+    AngGuiTabsComponent,
+    AngGuiTabComponent
   ],
   exports: [
     AngGuiAlertComponent,
@@ -71,6 +73,8 @@ import { AngGuiVideoPlayerComponent } from './video-player/ang-gui-video-player.
     AngGuiExpanderMenuComponent,
     AngGuiLabelComponent,
     AngGuiVideoPlayerComponent,
+    AngGuiTabsComponent,
+    AngGuiTabComponent
   ],
   providers: [AlertMessageService],
   entryComponents: [AngGuiAlertControllerComponent, AngGuiPopupComponent],
