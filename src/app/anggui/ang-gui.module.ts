@@ -24,6 +24,8 @@ import { AngGuiNavBarWithListMenuComponent } from './nav-bar-with-list-menu/ang-
 import { AngGuiExpanderMenuComponent } from './expander-menu/ang-gui-expander-menu.component';
 import { AngGuiLabelComponent } from './label/ang-gui-label.component';
 import { AngGuiVideoPlayerComponent } from './video-player/ang-gui-video-player.component';
+import { AngGuiTabComponent } from './tabs/ang-gui-tab/ang-gui-tab.component';
+import { AngGuiTabsComponent } from './tabs/ang-gui-tabs/ang-gui-tabs.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, BrowserAnimationsModule],
@@ -50,7 +52,7 @@ import { AngGuiVideoPlayerComponent } from './video-player/ang-gui-video-player.
     AngGuiLabelComponent,
     AngGuiVideoPlayerComponent,
     AngGuiTabsComponent,
-    AngGuiTabComponent
+    AngGuiTabComponent,
   ],
   exports: [
     AngGuiAlertComponent,
@@ -74,7 +76,7 @@ import { AngGuiVideoPlayerComponent } from './video-player/ang-gui-video-player.
     AngGuiLabelComponent,
     AngGuiVideoPlayerComponent,
     AngGuiTabsComponent,
-    AngGuiTabComponent
+    AngGuiTabComponent,
   ],
   providers: [AlertMessageService],
   entryComponents: [AngGuiAlertControllerComponent, AngGuiPopupComponent],
