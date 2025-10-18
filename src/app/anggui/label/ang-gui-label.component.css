@@ -48,7 +48,7 @@
 }
 
 .refresh-link:before{
-  content: "\21BB";
+  /*content: "\21BB";
   color: rgb(11, 142, 207) !important;
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -64,7 +64,7 @@
 
 .previous-button-link:before{
   color: rgb(11, 142, 207) !important;
-  content: "\22C1";
+  /*content: "\22C1";
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
    -o-transform: rotate(90deg);
@@ -79,7 +79,7 @@
 
 .next-button-link:after{
   color: rgb(11, 142, 207) !important;
-  content: "\22C1";
+  /*content: "\22C1";
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
    -o-transform: rotate(-90deg);
@@ -110,7 +110,7 @@
 
 .add-button-link:before{
   color: rgb(11, 142, 207) !important;
-  content: "\254B";
+  /*content: "\254B";
   font-weight: bold;
   font-size:16px;
   padding: 0px 10px;
@@ -134,49 +134,49 @@
 }
 
 .icon-link.delete-button-link:before{
-  content:url('../../../assets/icons/trash-icon.ico');
+  /*content:url('../../../assets/icons/trash-icon.ico');*
 }
 
 .icon-link.open-page-button-link:before{
-  content:url('../../../assets/icons/open-page-icon.ico');
+  /*content:url('../../../assets/icons/open-page-icon.ico');*
 }
 
 .icon-link.folder-button-link:before{
-  content:url('../../../assets/icons/folder.ico');
+  /*content:url('../../../assets/icons/folder.ico');*
 }
 
 .icon-link.galary-button-link:before{
-  content:url('../../../assets/icons/galary.ico');
+  /*content:url('../../../assets/icons/galary.ico');*
 }
 
 .icon-link.home-button-link:before{
-  content:url('../../../assets/icons/home.ico');
+  /*content:url('../../../assets/icons/home.ico');*
 }
 
 .icon-link.download-button-link:before{
-  content:url('../../../assets/icons/download.ico');
+  /*content:url('../../../assets/icons/download.ico');*
 }
 
 .icon-link.upload-button-link:before{
-  content:url('../../../assets/icons/upload.ico');
+  /*content:url('../../../assets/icons/upload.ico');*
 }
 
 .icon-link.pages-button-link:before{
-  content:url('../../../assets/icons/pages.ico');
+  /*content:url('../../../assets/icons/pages.ico');*
 }
 
 .icon-link.ordered-list-icon:before{
-  content:url('../../../assets/icons/list-left.ico');
+  /*content:url('../../../assets/icons/list-left.ico');*
 }
 .icon-link.ordered-list-icon:hover::before{
-  content:url('../../../assets/icons/list-down.ico');
+  /*content:url('../../../assets/icons/list-down.ico');*
   top:5px;
 }
 .active.icon-link.ordered-list-icon:before{
-  content:url('../../../assets/icons/list-down.ico');
+  /*content:url('../../../assets/icons/list-down.ico');*
 }
 .icon-link.like-icon:before{
-  content:url('../../../assets/icons/like1.ico');
+  /*content:url('../../../assets/icons/like1.ico');*
   zoom: 1.4;
   top: 6px;
   opacity: .8;
