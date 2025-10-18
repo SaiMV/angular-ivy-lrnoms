@@ -1,12 +1,10 @@
-
-
 .link-text {
   color: rgb(7, 168, 248);
   font-family: roboto;
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 16px;
-  padding:8px;
+  padding: 8px;
   display: inline-block;
 }
 
@@ -17,168 +15,168 @@
 .link-text.hover-underline:hover {
   /* text-decoration: underline; */
   border-bottom: 1px solid rgb(7, 168, 248);
-  cursor:pointer; 
+  cursor: pointer;
   padding-bottom: 7px;
   color: rgb(11, 142, 207) !important;
 }
 
-.disabled{
-  cursor:none;
+.disabled {
+  cursor: none;
   color: rgb(0, 5, 7) !important;
   pointer-events: none;
-  opacity: .4;
+  opacity: 0.4;
 }
 
-.main-header {	
+.main-header {
   display: flex;
-  color: rgb(57, 60, 64);	
-  font-size: 35px;	
-  font-weight: 300;	
-  letter-spacing: 1px;	
+  color: rgb(57, 60, 64);
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 1px;
   line-height: 41px;
 }
 
-.sub-header {	
+.sub-header {
   display: flex;
-  color: #393C40;	
-  font-size: 26px;	
-  font-weight: 300;	
-  letter-spacing: 1px;	
+  color: #393c40;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
   line-height: 30px;
 }
 
-.refresh-link:before{
-  /*content: "\21BB";
+.refresh-link:before {
+  content: '\21BB';
   color: rgb(11, 142, 207) !important;
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
-   -o-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
   transform: rotate(120deg);
   position: relative;
-  display:inline-block;
-  padding:0px 10px;
-  font-size:22px;
-  cursor:pointer;
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-.previous-button-link:before{
+.previous-button-link:before {
   color: rgb(11, 142, 207) !important;
-  /*content: "\22C1";
+  content: '\22C1';
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
-   -o-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  padding:10px 5px;
-  top:2px;
+  padding: 10px 5px;
+  top: 2px;
   position: relative;
-  display:inline-block;
-  font-size:22px;
+  display: inline-block;
+  font-size: 22px;
 }
 
-.next-button-link:after{
+.next-button-link:after {
   color: rgb(11, 142, 207) !important;
-  /*content: "\22C1";
+  content: '\22C1';
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
-   -o-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  padding:10px 5px;
-  top:2px;
+  padding: 10px 5px;
+  top: 2px;
   position: relative;
-  display:inline-block;
-  font-size:22px;
-  cursor:pointer;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .refresh-link,
 .add-button-link,
-.previous-button-link, 
-.next-button-link{
-  cursor:pointer;
+.previous-button-link,
+.next-button-link {
+  cursor: pointer;
 }
 
 .add-button-link:hover,
-.previous-button-link:hover, 
+.previous-button-link:hover,
 .next-button-link:hover,
 .refresh-link:hover:hover,
-.icon-link:hover{
+.icon-link:hover {
   color: rgb(11, 142, 207) !important;
 }
 
-.add-button-link:before{
+.add-button-link:before {
   color: rgb(11, 142, 207) !important;
-  /*content: "\254B";
+  content: '\254B';
   font-weight: bold;
-  font-size:16px;
+  font-size: 16px;
   padding: 0px 10px;
-  display:inline-block;
-  cursor:pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.icon-link{
-  display:inline-block;
-  cursor:pointer;
+.icon-link {
+  display: inline-block;
+  cursor: pointer;
 }
 
-.icon-link:before{
+.icon-link:before {
   font-weight: bold;
-  font-size:16px;
-  top:2px;
+  font-size: 16px;
+  top: 2px;
   position: relative;
   padding: 0px 10px;
-  cursor:pointer;
-  opacity: .6;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
-.icon-link.delete-button-link:before{
-  /*content:url('../../../assets/icons/trash-icon.ico');/*
+.icon-link.delete-button-link:before {
+  /* ent:url('../../../assets/icons/trash-icon.ico'); */
 }
 
-.icon-link.open-page-button-link:before{
-  /*content:url('../../../assets/icons/open-page-icon.ico');/*
+.icon-link.open-page-button-link:before {
+  /* content:url('../../../assets/icons/open-page-icon.ico'); */
 }
 
-.icon-link.folder-button-link:before{
-  /*content:url('../../../assets/icons/folder.ico');/*
+.icon-link.folder-button-link:before {
+  /* content:url('../../../assets/icons/folder.ico'); */
 }
 
-.icon-link.galary-button-link:before{
-  /*content:url('../../../assets/icons/galary.ico');/*
+.icon-link.galary-button-link:before {
+  /* content:url('../../../assets/icons/galary.ico'); */
 }
 
-.icon-link.home-button-link:before{
-  /*content:url('../../../assets/icons/home.ico');/*
+.icon-link.home-button-link:before {
+  /* content:url('../../../assets/icons/home.ico'); */
 }
 
-.icon-link.download-button-link:before{
-  /*content:url('../../../assets/icons/download.ico');/*
+.icon-link.download-button-link:before {
+  /* content:url('../../../assets/icons/download.ico'); */
 }
 
-.icon-link.upload-button-link:before{
-  /*content:url('../../../assets/icons/upload.ico');/*
+.icon-link.upload-button-link:before {
+  /* content:url('../../../assets/icons/upload.ico'); */
 }
 
-.icon-link.pages-button-link:before{
-  /*content:url('../../../assets/icons/pages.ico');/*
+.icon-link.pages-button-link:before {
+  /* content:url('../../../assets/icons/pages.ico'); */
 }
 
-.icon-link.ordered-list-icon:before{
-  /*content:url('../../../assets/icons/list-left.ico');/*
+.icon-link.ordered-list-icon:before {
+  /* content:url('../../../assets/icons/list-left.ico'); */
 }
-.icon-link.ordered-list-icon:hover::before{
-  /*content:url('../../../assets/icons/list-down.ico');/*
-  top:5px;
+.icon-link.ordered-list-icon:hover::before {
+  /* content:url('../../../assets/icons/list-down.ico'); */
+  top: 5px;
 }
-.active.icon-link.ordered-list-icon:before{
-  /*content:url('../../../assets/icons/list-down.ico');/*
+.active.icon-link.ordered-list-icon:before {
+  /* content:url('../../../assets/icons/list-down.ico'); */
 }
-.icon-link.like-icon:before{
-  /*content:url('../../../assets/icons/like1.ico');/*
+.icon-link.like-icon:before {
+  /* content:url('../../../assets/icons/like1.ico'); */
   zoom: 1.4;
   top: 6px;
-  opacity: .8;
-  padding-left:0px;
+  opacity: 0.8;
+  padding-left: 0px;
 }
